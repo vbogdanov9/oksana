@@ -8,3 +8,19 @@
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Light.ttf');
+	src: local('Lato 300'), local('Lato Light'),
+		url('../fonts/Lato-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url('../fonts/RobotoSlab.ttf');
+	src: local('Roboto Slab'), local('Roboto Slab'),
+		url('../fonts/RobotoSlab.ttf') format('truetype');
+	/* font-weight: 300; */
+	font-style: normal;
+}
