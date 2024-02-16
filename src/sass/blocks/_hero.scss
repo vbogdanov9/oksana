@@ -1,6 +1,6 @@
 .hero {
     height: 851px;
-    padding-top: 186px;    
+    padding-top: calc(186px - 136px);    
     &__wrapper {
         display: flex;;
         justify-content: space-between;
@@ -10,6 +10,7 @@
         max-width: 580px;
     }
     &__title {
+        margin-top: 35px;
         font-family: Raleway;
         font-size: 62px;
         font-weight: 300;
@@ -19,8 +20,17 @@
         color: $primary;
         span {
             color: $active;
-        }
-        
+        }        
+    }
+    &__subtitle {
+        margin-top: 28px;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $text
     }
 
 
