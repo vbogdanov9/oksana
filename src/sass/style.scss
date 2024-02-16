@@ -1,12 +1,15 @@
+@import 'base/variables';
+
 body {
     margin: 0;
-}
+    background-color: $bg-color;
+};
 
 .container {    
     max-width: 1380px;
     margin: 0 auto;
 };
 
-@import 'base/variables';
 
-@import 'blocks/header'
+@import 'blocks/header';
+@import 'blocks/hero';

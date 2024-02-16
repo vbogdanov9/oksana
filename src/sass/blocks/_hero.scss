@@ -1,0 +1,34 @@
+.hero {
+    height: 851px;
+    padding-top: 186px;    
+    &__wrapper {
+        display: flex;;
+        justify-content: space-between;
+        align-items: flex-start;  
+    }
+    &__frame40 {
+        max-width: 580px;
+    }
+    &__title {
+        font-family: Raleway;
+        font-size: 62px;
+        font-weight: 300;
+        line-height: 68px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: $primary;
+        span {
+            color: $active;
+        }
+        
+    }
+
+
+    &__mainfigure {
+        width: 686px;
+        height: 537px;
+        background-image: url(../images/hero_draft.png);
+        background-size: contain;
+    }
+
+}
