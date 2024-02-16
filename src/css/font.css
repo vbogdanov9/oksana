@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher-Bold.eot');
+	src: local('Philosopher Bold'), local('Philosopher-Bold'),
+		url('../fonts/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Philosopher-Bold.woff') format('woff'),
+		url('../fonts/Philosopher-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
