@@ -32,13 +32,23 @@
         text-align: left;
         color: $text
     }
-
-
+    button {
+        margin-top: 64px;        
+    } 
+    .request_call {
+            background: $medium;
+            border: none;
+            color: $bg-color;        
+        }   
+    .howitworks {
+        box-sizing: border-box;
+        border: 4px solid $medium;
+        color: $medium;  
+    }
     &__mainfigure {
         width: 686px;
         height: 537px;
         background-image: url(../images/hero_draft.png);
         background-size: contain;
     }
-
 }
