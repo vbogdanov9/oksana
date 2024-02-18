@@ -54,10 +54,14 @@
         background-size: auto 100%;
         background-position: center center;
         background-repeat: no-repeat;
+         //кпробую затемнить исходную картинку, не совсем верно:
         background-color: $bg-color;
         background-blend-mode: multiply;
+        font-family: Roboto Slab;
+        font-weight: 400;
+        text-align: left;     
     }
-    .mainfigure {   
+    .mainfigure {    
         &__top {
             display: flex;
             justify-content: flex-start;
@@ -74,32 +78,87 @@
             height: 232px;   //подобрал         
             border-radius: 36px 36px 16px 36px;
             border: 5px solid $dark;
+            color: $primary;
             .group1__text1 {
-                margin-top: 43px; //подобрал
-                margin-left: 32px; //подобрал
-                color: $primary;
-                font-family: Roboto Slab;
+                margin-top: 45px; //подобрал
+                margin-left: 31px; //подобрал 
                 font-size: 79px; //подобрал
-                font-weight: 400;
-                line-height: 100px;
-                letter-spacing: 2px; //подобрал
-                text-align: left;            
+                line-height: 97px;
+                letter-spacing: 1.8px; //подобрал                
+            }
+            .group1__text2  {
+                letter-spacing: 1.2px; //подобрал    
+                margin-left: 35px; //подобрал     
+                font-size: 20px;      
+                line-height: 29px; 
             }
         }
-        &__top-bg {
-            width: 100px;  //достаточно?
-            height: 100px;
-            overflow: hidden;
-        }
-        &__top-bg-shadow {
-            width: 200px;  //достаточно?
-            height: 200px;
-            border-radius: 36px 0 0 0;
-            box-shadow: 0px 0px 0px 30px #EBEAE6;
-        }
 
-        
-        
-        
+        &__middle {
+            height: 121px; //подобрал
+            display: flex;
+            justify-content: space-between;    
+            
+        }
+        &__bottom {
+           height: 186px; //подобрал
+           display: flex; 
+           justify-content: flex-end;
+        }
+        &__group2-bg {
+            background-color: $bg-color;
+             width: 283px;  //подобрал           
+            border-radius: 36px 0 0 0;
+        } 
+        &__group2 {
+            margin-top: 16px;
+            margin-left: 16px;
+            height: 160px;   //подобрал         
+            border-radius: 16px 36px 36px 36px;
+            border: 5px solid $dark;
+            color: $primary;
+            .group2__text1 {
+                margin-top: 35px; //подобрал     
+                margin-left: 25px; //подобрал     
+                font-size: 16px;
+                line-height: 21px;
+                letter-spacing: 1px;
+                text-align: left;
+            }
+            .group2__text2 {
+                margin-top: 8px; //подобрал
+                margin-left: 26px; //подобрал
+                font-size: 65px; //подобрал
+                line-height: 65px; //подобрал
+                letter-spacing: 1.4px; //подобрал
+            }
+
+        }
+    }
+}
+
+.rounded_corner {
+    position: relative;
+    width: 50px;  //достаточно?
+    height: 50px;
+    overflow: hidden;
+
+    &_bottom {
+        align-self: flex-end;
+        .shadow {
+            bottom:0;
+        }
+    }
+    &_right {
+        .shadow {
+            right:0;
+        }
+    }
+    .shadow {
+        position: absolute;
+        width: 100px;  //достаточно?
+        height: 100px;                
+        box-shadow: 0px 0px 0px 30px $bg-color;
+        border-radius: 36px 36px 36px 36px;
     }
 }
