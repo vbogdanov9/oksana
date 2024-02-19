@@ -1,4 +1,8 @@
-.header_sticky {
+.header_sticky {    
+    position: sticky;
+    top: 0;    
+    background-color: $bg-color;
+    // z-index: 5;
     height: 136px;
     border-bottom: 1px solid #A9A69E;
     .header {    
