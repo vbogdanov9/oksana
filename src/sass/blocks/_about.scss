@@ -1,4 +1,44 @@
 .about {
     padding-top: 132px;  
     padding-bottom: 132px;
+    &__item {
+        display: flex;        
+    }
+    &__photo {
+        display: block;
+        width: 454px;
+        height: 635px;
+        border-radius: 36px;
+    }
+    &__info {
+        margin-left: 125px;
+    }
+    &__header {
+        height: 85px;
+        font-family: Raleway;
+        font-size: 48px;
+        font-weight: 300; // в макете
+        // font-weight: 400; // пробую -  нет разницы
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: $primary;
+    }
+    &__divider {
+        width: 569px;
+        border-bottom: 1px solid $header_underline;
+    }
+    &__descr {
+        margin-top: 34px;
+        max-width: 569px;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.62px;
+        text-align: left;
+        color: $text;
+    }
+    &__descr2 {
+        margin-top: 16px;
+    }
 }
