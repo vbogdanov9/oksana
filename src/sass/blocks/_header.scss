@@ -1,10 +1,10 @@
 .header_sticky {    
     position: sticky;
     top: 0;    
-    background-color: $bg-color;
-    // z-index: 5;
+    background-color: $bg-color;    
     height: 136px;
     border-bottom: 1px solid $header_underline;
+    z-index: 1;
     .header {    
         padding-left: 32px;
         padding-right: 32px;

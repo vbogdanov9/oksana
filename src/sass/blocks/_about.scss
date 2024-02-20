@@ -11,6 +11,7 @@
         border-radius: 36px;
     }
     &__info {
+        position: relative;
         margin-left: 125px;
     }
     &__header {
@@ -40,5 +41,36 @@
     }
     &__descr2 {
         margin-top: 16px;
+    }
+    &__scroll {
+        position: absolute;
+        bottom: 46px;
+        &-stripe {
+            width: 686px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: $about__scroll-stripe;
+            &_dark {
+                width: 222px;
+                background-color: $about__scroll-stripe-dark;
+            }
+        }
+    }
+    &__switch {
+        margin-top: 27px;
+        margin-left: 44px;
+        display: flex;
+        width: 63px;
+        // width: 103px;
+        height: 30px;
+        background-image: url(../icons/arrows.svg);
+        background-size: 100% 100%;
+        .dot {
+            width: 18.8px;
+            height: 21.21px;
+            margin: auto;
+            background-image: url(../icons/dot.svg);
+            background-size: 100% 100%;
+        }
     }
 }
