@@ -41,39 +41,7 @@
     }
     &__descr2 {
         margin-top: 16px;
-    }
-    // &__scroll {
-    //     position: absolute;
-    //     // bottom: 46px;
-    //     bottom: 86px;
-    //     &-stripe {
-    //         width: 686px;
-    //         height: 8px;
-    //         border-radius: 4px;
-    //         background-color: $about__scroll-stripe;
-    //         &_dark {
-    //             width: 222px;
-    //             background-color: $about__scroll-stripe-dark;
-    //         }
-    //     }
-    // }
-    // &__switch {
-    //     margin-top: 27px;
-    //     margin-left: 44px;
-    //     display: flex;
-    //     width: 63px;
-    //     // width: 103px;
-    //     height: 30px;
-    //     background-image: url(../icons/arrows.svg);
-    //     background-size: 100% 100%;
-    //     .dot {
-    //         width: 18.8px;
-    //         height: 21.21px;
-    //         margin: auto;
-    //         background-image: url(../icons/dot.svg);
-    //         background-size: 100% 100%;
-    //     }
-    // }
+    }  
     .swiper {
         --swiper-scrollbar-size: 8px;
         --swiper-scrollbar-border-radius: 4px;
@@ -93,9 +61,62 @@
             &-drag {
                 background-color: $about__scroll-stripe-dark;
             }
+        } 
+
+
+        &-pagination {
+            --swiper-pagination-bullet-border-radius: 0;
+            &-bullet {
+            width: 63px;
+            height: 30px;
+            background-image: url(../icons/arrows.svg);
+            background-size: 100% 100%;
+            // width: 20px;
+            // height: 20px;
+            // text-align: center;
+            // line-height: 20px;
+            // font-size: 12px;
+            // color: #000;
+            // opacity: 1;
+            // background: rgba(0, 0, 0, 0.2);
+          }
         }
 
-        
-          
-      }
+        // &-switch {
+        //     position: absolute;
+        //     bottom: 20px;
+        //     display: flex;
+        //     width: 63px;
+        //     height: 30px;
+        //     background-image: url(../icons/arrows.svg);
+        //     background-size: 100% 100%;
+        //     .dot {
+        //         width: 18.8px;
+        //         height: 21.21px;
+        //         margin: auto;
+        //         background-image: url(../icons/dot.svg);
+        //         background-size: 100% 100%;
+        //     }
+        // }
+    }
+
+
+    
+
+    
+    // &__scroll {
+    //     position: absolute;
+    //     // bottom: 46px;
+    //     bottom: 86px;
+    //     &-stripe {
+    //         width: 686px;
+    //         height: 8px;
+    //         border-radius: 4px;
+    //         background-color: $about__scroll-stripe;
+    //         &_dark {
+    //             width: 222px;
+    //             background-color: $about__scroll-stripe-dark;
+    //         }
+    //     }
+    // }
 }
