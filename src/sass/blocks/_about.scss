@@ -42,39 +42,60 @@
     &__descr2 {
         margin-top: 16px;
     }
-    &__scroll {
-        position: absolute;
-        bottom: 46px;
-        &-stripe {
+    // &__scroll {
+    //     position: absolute;
+    //     // bottom: 46px;
+    //     bottom: 86px;
+    //     &-stripe {
+    //         width: 686px;
+    //         height: 8px;
+    //         border-radius: 4px;
+    //         background-color: $about__scroll-stripe;
+    //         &_dark {
+    //             width: 222px;
+    //             background-color: $about__scroll-stripe-dark;
+    //         }
+    //     }
+    // }
+    // &__switch {
+    //     margin-top: 27px;
+    //     margin-left: 44px;
+    //     display: flex;
+    //     width: 63px;
+    //     // width: 103px;
+    //     height: 30px;
+    //     background-image: url(../icons/arrows.svg);
+    //     background-size: 100% 100%;
+    //     .dot {
+    //         width: 18.8px;
+    //         height: 21.21px;
+    //         margin: auto;
+    //         background-image: url(../icons/dot.svg);
+    //         background-size: 100% 100%;
+    //     }
+    // }
+    .swiper {
+        --swiper-scrollbar-size: 8px;
+        --swiper-scrollbar-border-radius: 4px;
+        --swiper-scrollbar-bottom: 119px;
+        
+        // --swiper-scrollbar-right: 0px;        
+        // --swiper-scrollbar-bg-color: $about__scroll-stripe;
+        // --swiper-scrollbar-top: auto;        
+        // --swiper-scrollbar-left: auto;        
+        // --swiper-scrollbar-sides-offset: 1%;        
+        // --swiper-scrollbar-drag-bg-color: $about__scroll-stripe-dark;
+        &-scrollbar {
             width: 686px;
-            height: 8px;
-            border-radius: 4px;
             background-color: $about__scroll-stripe;
-            &_dark {
-                width: 222px;
+            left: auto;
+            right: 115px;
+            &-drag {
                 background-color: $about__scroll-stripe-dark;
             }
         }
-    }
-    &__switch {
-        margin-top: 27px;
-        margin-left: 44px;
-        display: flex;
-        width: 63px;
-        // width: 103px;
-        height: 30px;
-        background-image: url(../icons/arrows.svg);
-        background-size: 100% 100%;
-        .dot {
-            width: 18.8px;
-            height: 21.21px;
-            margin: auto;
-            background-image: url(../icons/dot.svg);
-            background-size: 100% 100%;
-        }
-    }
-    .swiper {
-        // width: 100%;
-        // height: 700px;
+
+        
+          
       }
 }
