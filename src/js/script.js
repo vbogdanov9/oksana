@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     // direction: 'vertical',
     loop: true,
     grabCursor: true,
+    speed: '1000',
   
     // If we need pagination
     pagination: {
@@ -21,34 +22,11 @@ const swiper = new Swiper('.swiper', {
 
     scrollbar: {
       el: '.swiper-scrollbar',
-      // draggable: true,
+      draggable: true,
     },
 
     effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
-
-    speed: '1000',
-    
-
-    // renderBullet: function (index, className) {
-    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
-    // },
-
-
-    // pagination: {
-    //   el: '.swiper-progressbar',
-    //   clickable: true,
-    //   type: 	'progressbar',
-    // },
-  
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-    // And if we need scrollbar
-
   });

@@ -19,7 +19,6 @@
         font-family: Raleway;
         font-size: 48px;
         font-weight: 300; // в макете
-        // font-weight: 400; // пробую -  нет разницы
         letter-spacing: 0.2px;
         text-align: left;
         color: $primary;
@@ -46,13 +45,6 @@
         --swiper-scrollbar-size: 8px;
         --swiper-scrollbar-border-radius: 4px;
         --swiper-scrollbar-bottom: 103px;
-        
-        // --swiper-scrollbar-right: 0px;        
-        // --swiper-scrollbar-bg-color: $about__scroll-stripe;
-        // --swiper-scrollbar-top: auto;        
-        // --swiper-scrollbar-left: auto;        
-        // --swiper-scrollbar-sides-offset: 1%;        
-        // --swiper-scrollbar-drag-bg-color: $about__scroll-stripe-dark;
         &-scrollbar {
             width: 686px;
             background-color: $about__scroll-stripe;
@@ -61,31 +53,35 @@
             &-drag {
                 background-color: $about__scroll-stripe-dark;
             }
-        } 
-
-
+        }
         &-pagination {
             --swiper-pagination-bullet-border-radius: 0;
-            // background: var(--swiper-pagination-bullet-inactive-color,#000);
-            --swiper-pagination-bullet-inactive-opacity: 1;
-            display: flex;
-            justify-content: space-around;
+            --swiper-pagination-bullet-inactive-opacity: 1;            
             width: 686px;
             left: auto;
             right: 115px;
             bottom: 45px;
+            display: flex;
+            justify-content: space-around;
             &-bullet {
                 width: 63px;
                 height: 30px;
                 display: flex;
                 background: none;
                 background-image: url(../icons/arrows.svg);
-                background-size: 100% 100%;    
+                background-size: 100% 100%;   
+                &:hover {
+                    transition: 0.3s all;
+                    transform: scale(1.2); 
+                    }
+                    &:active {
+                        transform: scale(1.4); 
+                    } 
                 .dot {
                     display: none;
                 }    
                 &-active {
-                    .dot {
+                    .dot {                        
                         display: block;
                         width: 18.8px;
                         height: 21.21px;
@@ -93,54 +89,8 @@
                         background-image: url(../icons/dot.svg);
                         background-size: 100% 100%;
                     }
-                }    
-
-            // width: 20px;
-            // height: 20px;
-            // text-align: center;
-            // line-height: 20px;
-            // font-size: 12px;
-            // color: #000;
-            // opacity: 1;
-            // background: rgba(0, 0, 0, 0.2);
-          }
+                }
+            }
         }
-
-        // &-switch {
-        //     position: absolute;
-        //     bottom: 20px;
-        //     display: flex;
-        //     width: 63px;
-        //     height: 30px;
-        //     background-image: url(../icons/arrows.svg);
-        //     background-size: 100% 100%;
-        //     .dot {
-        //         width: 18.8px;
-        //         height: 21.21px;
-        //         margin: auto;
-        //         background-image: url(../icons/dot.svg);
-        //         background-size: 100% 100%;
-        //     }
-        // }
     }
-
-
-    
-
-    
-    // &__scroll {
-    //     position: absolute;
-    //     // bottom: 46px;
-    //     bottom: 86px;
-    //     &-stripe {
-    //         width: 686px;
-    //         height: 8px;
-    //         border-radius: 4px;
-    //         background-color: $about__scroll-stripe;
-    //         &_dark {
-    //             width: 222px;
-    //             background-color: $about__scroll-stripe-dark;
-    //         }
-    //     }
-    // }
 }
