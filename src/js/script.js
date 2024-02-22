@@ -13,6 +13,23 @@ const swiper = new Swiper('.swiper', {
       },
     },
 
+    autoplay: {
+      delay:	3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction:	false,
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      // draggable: true,
+    },
+
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+
+    speed: '1000',
     
 
     // renderBullet: function (index, className) {
@@ -33,8 +50,5 @@ const swiper = new Swiper('.swiper', {
     // },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      // draggable: true,
-    },
+
   });
