@@ -7,8 +7,24 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
+      clickable: true,      
+      renderBullet: function (index, className) {
+      return '<div class="' + className + '"><div class="dot"></div></div>';
+      },
     },
+
+    
+
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+
+
+    // pagination: {
+    //   el: '.swiper-progressbar',
+    //   clickable: true,
+    //   type: 	'progressbar',
+    // },
   
     // Navigation arrows
     // navigation: {
