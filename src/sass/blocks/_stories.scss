@@ -7,18 +7,24 @@
         justify-content: space-around;
     }       
     &__frame {
+        // margin-top: 10px;  
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 145px;
-        height: 190px;
-        border: 5px solid $stories_border;       
-        border-radius: 30px; 
+        align-items: center;        
+        border: 5px solid $stories_border; 
+        border-radius: 29px; 
+
+        box-sizing: border-box;            
+        width: 155px;
+        height: 200px;               
+        // width: 140px; content-box
+        // height: 183px;
     }
     &__content {
+        box-sizing: border-box;
         width: 135px;
-        height: 180px;
-        border-radius: 20px;
+        height: 178px;
+        border-radius: 18px;
         background-image: url(../images/oksana_2.jpg);        
         background-size: 160% auto;
         background-position: center center;

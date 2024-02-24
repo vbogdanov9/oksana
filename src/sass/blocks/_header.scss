@@ -1,11 +1,13 @@
-.header_sticky {    
+.header_sticky { 
+    box-sizing: border-box;
+    height: 137px;    
+    // height: 136px; content-box
     position: sticky;
     top: 0;    
-    background-color: $bg-color;    
-    height: 136px;
+    background-color: $bg-color;
     border-bottom: 1px solid $header_underline;
     z-index: 2;
-    .header {    
+    .header {   
         padding-left: 32px;
         padding-right: 32px;
         display: flex;

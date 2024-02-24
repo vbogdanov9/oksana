@@ -1,11 +1,14 @@
 @import 'base/variables';
+// @import 'base/reboot';
 
-// * {
-//     box-sizing: border-box;
-// }
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+    padding: 0;
     background-color: $bg-color;
 };
 
@@ -14,6 +17,16 @@ body {
     margin: 0 auto;
 };
 
+
+
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/stories';
+
+
+// пустой блок , потом удалить
 .empty {    
     height: 300px;
     background-color: white;
@@ -21,9 +34,3 @@ body {
     padding-top: 150px;
     font-size: 30px;
 }
-
-@import 'blocks/buttons';
-@import 'blocks/header';
-@import 'blocks/hero';
-@import 'blocks/about';
-@import 'blocks/stories';
