@@ -1,0 +1,17 @@
+.service {
+    height: 1009px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__header {
+        font-family: Raleway;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $primary;
+    }
+    &__frame {
+        background-color: $Dark_Grayish;
+    }
+}
