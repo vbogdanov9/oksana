@@ -12,6 +12,60 @@
         color: $primary;
     }
     &__frame {
+        margin-top: 64px;
+        padding-top: 57px;
+        padding-right: 58px;
+        padding-left: 116px;
+        display: flex;
+        justify-content: space-between;
         background-color: $Dark_Grayish;
+        height: 633px;
+        border-radius: 36px;
+    }
+    &__picture {
+        width: 583px;
+        height: 576px;
+        border-radius: 40px 40px 0 0;
+        background-image: url(../images/service_picture.jpg);        
+        background-size: 100% auto;
+        background-position: center center;
+        background-repeat: no-repeat;   
+    }
+    &__items {
+        margin-top: 9px;
+        width: 554px; // подобрал
+        height: 477px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    &__item {
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;    
+            align-items:center;
+        &-text {            
+            font-family: Raleway;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38px;
+            letter-spacing: 0.2px; // подобрал
+            text-align: left;
+            color: $Lightest;
+        }
+        &-plus {
+            width: 34px;
+            height: 34px;
+            background-image: url(../icons/service-plus.svg);
+            background-size: 100% 100%;            
+        }
+    }
+		
+    &__divider {
+        width: 452px;
+        border: 1px solid $text;
+    }
+    button {
+        margin: 40px auto 0 auto;
     }
 }
