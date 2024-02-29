@@ -1,0 +1,77 @@
+.cases {
+    height: 985px;
+    padding-top: 80px;
+
+    &__header {
+        font-family: Raleway;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+        letter-spacing: 0.44px; // подобрал
+        text-align: left;
+        color: $primary;
+        span {
+            color: $active;
+        }
+    }
+    &__subheader {
+        margin-top: 23px; // подобрал
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px; // подобрал
+        letter-spacing: 0.25px; //подобрал
+        text-align: left;
+        color: $cases_subheader;
+
+    }    
+    &__swiper {
+        margin-top: 56px; // подобрал
+    }
+
+
+    &__item-frame {
+        height: 518px;
+        width: 404px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey_bg;
+        border-radius: 42px;
+    }
+    &__item {   
+        position: relative;     
+        width: 356px;
+        height: 470px;   
+        padding-left: 32px;     
+        background-image: url(../images/cases_item-bg.jpg);        
+        background-size: 100% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 18px;   
+        background-color: $grey_bg;
+        background-blend-mode: multiply;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        color: $cases_item-text;        
+        &-text1 {
+            margin-top: 28px;
+            line-height: 37px;
+            letter-spacing: 0.5px;
+
+        }
+        &-text2 {
+            position: absolute;
+            bottom: 36px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            a {
+                color: $cases_item-text;
+            }
+
+        }
+    }
+
+}

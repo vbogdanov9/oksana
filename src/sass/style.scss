@@ -1,14 +1,18 @@
 @import 'base/variables';
+@import 'base/font';
+
+
+
 // @import 'base/reboot';
 
 
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
+}
+
+body {    
     background-color: $bg-color;
 };
 
@@ -25,6 +29,7 @@ body {
 @import 'blocks/about';
 @import 'blocks/stories';
 @import 'blocks/service';
+@import 'blocks/cases';
 
 
 
