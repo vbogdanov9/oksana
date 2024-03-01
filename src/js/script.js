@@ -1,6 +1,5 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    // direction: 'vertical',
     loop: true,
     grabCursor: true,
     speed: '1000',
@@ -28,5 +27,15 @@ const swiper = new Swiper('.swiper', {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
+    },
+  });
+
+  const cases_swiper = new Swiper('.cases__swiper', {
+    slidesPerView: 3,
+    speed: 400,
+    spaceBetween: 85,
+    navigation: {
+      nextEl: ".cases__button-next",
+      prevEl: ".cases__button-prev",
     },
   });

@@ -23,12 +23,7 @@
         letter-spacing: 0.25px; //подобрал
         text-align: left;
         color: $cases_subheader;
-
     }    
-    &__swiper {
-        margin-top: 56px; // подобрал
-    }
-
 
     &__item-frame {
         height: 518px;
@@ -70,7 +65,51 @@
             a {
                 color: $cases_item-text;
             }
+        }
+    }
 
+        &__swiper-container {
+        position: relative;
+    }
+
+    &__swiper {
+        margin-top: 56px; 
+        overflow: hidden;        
+    }
+       
+    &__button {
+        position: absolute;
+        width: 81px;
+        height: 138px;
+        border-radius: 80px;
+        top:48%; // подобрал
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;  
+        &:hover {
+            cursor: pointer;
+            background-color: $Lightest;
+        }  
+        &-prev {
+            left: -102px;
+            background-image: url(../icons/Arrow_Left_active.svg);            
+        }
+        &-next {            
+            right: -102px;
+            background-image: url(../icons/arrow_right_active.svg);
+        } 
+        &-next.swiper-button-disabled {
+            background-image: url(../icons/arrow_right.svg);
+        }        
+        &-prev.swiper-button-disabled {
+            background-image: url(../icons/Arrow_Left.svg);
+        }
+    }
+    
+    .swiper-button-disabled {
+        &:hover {
+            cursor: auto;
+            background-color: $bg-color;
         }
     }
 
