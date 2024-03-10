@@ -70,7 +70,6 @@
         &-test {
             background-color: $Dark_Grayish;
             color: $bg-color;
-
         }
         &-call {
             background-color: $cases_item-text;
@@ -96,6 +95,7 @@
     &__button-call {
         border-color: $medium;
         color: $medium;
+        background-color: $cases_item-text;
     }
 
       

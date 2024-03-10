@@ -36,16 +36,16 @@
         margin-top: 64px;  
         display: flex;      
     } 
-    // .request_call {
-    //         background: $medium;
-    //         border: none;
-    //         color: $bg-color;        
-    //     }   
-    // .howitworks {
-    //     margin-left: 8px;
-    //     border-color: $medium;
-    //     color: $medium;  
-    // }
+    .request_call {
+            background: $medium;
+            border: none;
+            color: $bg-color;        
+        }   
+    .howitworks {
+            margin-left: 8px;
+            border-color: $medium;
+            color: $medium;  
+        }
     &__mainfigure {
         border-radius: 36px;
         width: 720px; //подобрал    
