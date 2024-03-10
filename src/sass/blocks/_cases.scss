@@ -68,7 +68,7 @@
         }
     }
 
-        &__swiper-container {
+    &__swiper-container {
         position: relative;
     }
 
@@ -90,27 +90,26 @@
             cursor: pointer;
             background-color: $Lightest;
         }  
+        
         &-prev {
             left: -102px;
-            background-image: url(../icons/Arrow_Left_active.svg);            
+            background-image: url(../icons/Arrow_Left_active.svg);   
+            &.swiper-button-disabled {
+                background-image: url(../icons/Arrow_Left.svg);
+            }
         }
         &-next {            
             right: -102px;
             background-image: url(../icons/arrow_right_active.svg);
-        } 
-        &-next.swiper-button-disabled {
-            background-image: url(../icons/arrow_right.svg);
-        }        
-        &-prev.swiper-button-disabled {
-            background-image: url(../icons/Arrow_Left.svg);
+            &.swiper-button-disabled {
+                background-image: url(../icons/arrow_right.svg);
+            }      
         }
     }
-    
     .swiper-button-disabled {
         &:hover {
             cursor: auto;
             background-color: $bg-color;
         }
-    }
-
+    }   
 }
