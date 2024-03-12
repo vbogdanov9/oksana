@@ -45,14 +45,27 @@
             line-height: 24px;
             letter-spacing: 1.25px;
             text-align: left;
-            color: $text;            
+            color: $text;   
+            border: none;
             ::placeholder {
-                color: $header_underline;                
+                color: $header_underline;                              
+            }
+            &:not(:placeholder-shown) {
+                border: 3px solid $input_border;
             }
             &:focus {
-                outline-style: none;
-                border: 3px solid $input_border;                
+                outline: 5px solid $input_border;
             }    
+            &:invalid {
+                outline: 1px solid $error;
+                border: 1px solid $error;
+                color: $error;
+                background-image: url(../icons/input_error.svg);
+                background-repeat:no-repeat;
+                background-position: center right 16px;
+
+                
+            }
         }        
     }
     &__radio {
