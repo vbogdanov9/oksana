@@ -13,8 +13,8 @@
         line-height: 48px;
         color: $bg-color;
     }
-    &__subtitle {
-        margin-top: 32px;
+    h3 {
+        margin-top: 25px;
         max-width: 572px;
         color: $review_descr;
     }
@@ -53,8 +53,62 @@
                 outline-style: none;
                 border: 3px solid $input_border;                
             }    
-        }
+        }        
+    }
+    &__radio {
+        margin-top: 16px;
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 227px; 
+            display: flex;
+            align-items: center;            
+        }        
+        input[type=radio] {
+            appearance: none;
 
+            height: 32px;
+            width: 32px;
+            border: 2px solid $bg-color;
+            border-radius: 50%;
+            &:checked {
+                border-width: 6px;
+                background-color: $light;
+            }
+        }
+        label {
+            margin-left: 16px;
+            font-family: Roboto Slab;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1.25px;
+            text-align: left;
+            color:$white;
+        }
+    }
+    &__button {
+        margin-top: 64px;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        button {
+            border: none;
+            color: $Dark_Grayish;
+            background-color: $Lightest;
+        }
+        div {
+            max-width: 434px;
+            margin-left: 16px;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $Lightest;
+        }
     }
 
 }

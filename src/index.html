@@ -363,7 +363,7 @@
         <div class="container">
             <div class="cta__header">
                 <h2>Расскажите о своей проблеме</h2>
-                <h3 class="cta__subtitle">Свяжитесь со мной в WhatsApp или по телефону, и я отвечу на вопросы в личной беседе</h3>
+                <h3>Свяжитесь со мной в WhatsApp или по телефону, и я отвечу на вопросы в личной беседе</h3>
             </div>
             
             <form id="cta_form" class="cta__form" action="#">
@@ -376,25 +376,21 @@
                     <input class="string" name="phone" id="phone" value="+7 999 999-99-99" autofocus>  
                 </div>
                 <div>
-                    <label>Как связаться?</label>
+                    <label class="form">Как связаться?</label>
                     <div class="cta__radio">
-                        <div class="cta__radio-whatsapp">
+                        <div class="cta__radio-item">
                             <input type="radio" id="whatsapp" name="connect" value="whatsapp" checked />
                             <label for="whatsapp">WhatsApp</label>
                         </div>
-                        <div class="cta__radio-call">
+                        <div class="cta__radio-item">
                             <input type="radio" id="call" name="connect" value="call"/>
                             <label for="call">Звонок</label>
                         </div>
                     </div>
-
-                    <div>
-                        
+                    <div class="cta__button">
+                        <button class="">Отправить</button>
+                        <div>Нажимая на кнопку, я соглашаюсь с условиями политики конфиденциальности</div>
                     </div>
-
-                    
-                    <button class="">Отправить</button>
-                    <div>Нажимая на кнопку, я соглашаюсь с условиями политики конфиденциальности</div>
                 </div>
             </form>
 
