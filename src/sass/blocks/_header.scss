@@ -4,8 +4,9 @@
     // height: 136px; content-box
     position: sticky;
     top: 0;    
-    background-color: $bg-color;
     border-bottom: 1px solid $header_underline;
+    background-color: $bg-color;
+    color: $logo-text-color;
     z-index: 2;
     .header {   
         padding-left: 32px;
@@ -14,28 +15,6 @@
         height: 136px;
         justify-content: space-between;
         align-items: center;
-        &__title {
-            font-family: Philosopher;
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 25px;
-            letter-spacing: 0.25px;
-            text-align: left;
-            color: $font-color-blue;
-            margin-block-start: 0;
-            margin-block-end: 0;        
-        }
-        &__subtitle {        
-            font-family: Lato;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 23px;
-            letter-spacing: 0.75px;
-            text-align: left;
-            margin-block-start: 0;
-            margin-block-end: 0;   
-            color: $font-color-blue;
-        }
         &__whatsapp {
             display: flex;
             align-items: center;
@@ -47,8 +26,7 @@
             font-weight: 500;
             line-height: 32px;
             letter-spacing: 0.5px;
-            text-align: left;
-            color: $font-color-blue;
+            text-align: left;            
         }
     }
 }

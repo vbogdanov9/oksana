@@ -1,4 +1,73 @@
 .footer {
     padding: 80px 0 80px 0;
     background-color: $Lightest;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+        grid-auto-rows: auto;
+    }
+    &__copyright {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: $disabled_text;
+        &-seferyan {
+            justify-self: end;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+        align-content: start;
+        &-title {
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: $dark;
+            &_privacy {
+                text-decoration: underline;
+            }
+        }
+        &-content {
+            display: grid;
+            gap: 24px;            
+            &_socials {
+                grid-template-columns: repeat(2, min-content);
+            }
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            a {    
+                color: $text;
+                text-decoration: none;            
+                &:hover {
+                    color: $primary;
+                    text-decoration: underline;
+                }
+            }            
+            .contact-value {
+                font-weight: 600;
+                color: $dark;
+                text-decoration: none;
+                &:hover {                    
+                    text-decoration: none;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    
 }
