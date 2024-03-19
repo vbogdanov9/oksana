@@ -61,7 +61,6 @@ body {
 }
 
 button {
-  display: block;
   width: 224px;
   height: 64px;
   border: 4px solid;
@@ -72,6 +71,56 @@ button {
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: center;
+  border-color: #3F5081;
+  color: #3F5081;
+}
+button:focus {
+  background: #3F5081;
+  border: none;
+  color: #EBEAE6;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 74, 0.2);
+}
+button:hover {
+  border: none;
+  background-color: #5D6E9F;
+  color: #EBEAE6;
+  box-shadow: 0px 4px 32px 0px rgba(93, 110, 159, 0.3019607843);
+  cursor: pointer;
+}
+button:active {
+  border: none;
+  background-color: #0D1E4F;
+  color: #EBEAE6;
+  box-shadow: 0px 4px 12px 0px rgba(13, 30, 79, 0.4);
+}
+button.disabled {
+  border: 4px solid #A9A69E;
+  background-color: #EBEAE6;
+  color: #A9A69E;
+  box-shadow: none;
+}
+button.disabled:focus {
+  background-color: #A9A69E;
+  color: #4B4B4B;
+  border: none;
+  box-shadow: none;
+}
+button.disabled:focus:hover {
+  background-color: #A9A69E;
+  color: #4B4B4B;
+  border: none;
+  box-shadow: none;
+}
+button.disabled:hover {
+  border: 4px solid #A9A69E;
+  background-color: #EBEAE6;
+  color: #A9A69E;
+  box-shadow: none;
+}
+button.primary {
+  background-color: #E2E2E2;
+  border: none;
+  color: #373D4F;
 }
 
 h2 {
@@ -172,17 +221,9 @@ h3 {
 }
 .hero__buttons {
   margin-top: 64px;
-  display: flex;
-}
-.hero .request_call {
-  background: #3F5081;
-  border: none;
-  color: #EBEAE6;
-}
-.hero .howitworks {
-  margin-left: 8px;
-  border-color: #3F5081;
-  color: #3F5081;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min-content));
+  gap: 8px;
 }
 .hero__mainfigure {
   border-radius: 36px;
@@ -939,11 +980,6 @@ h3 {
   display: flex;
   align-items: center;
 }
-.cta__button button {
-  border: none;
-  color: #373D4F;
-  background-color: #E2E2E2;
-}
 .cta__button div {
   max-width: 434px;
   margin-left: 16px;
@@ -964,7 +1000,6 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 80px;
-  grid-auto-rows: auto;
 }
 .footer__copyright {
   display: grid;
@@ -1027,4 +1062,18 @@ h3 {
 .footer__item-content .contact-value:hover {
   text-decoration: none;
   color: #0D1E4F;
+}
+
+.empty {
+  height: 300px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min-content));
+  gap: 40px;
+  justify-content: space-between;
 }

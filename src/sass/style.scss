@@ -38,11 +38,18 @@ body {
 
 
 
-// пустой блок , потом удалить
-// .empty {    
-//     height: 300px;
-//     background-color: white;
-//     text-align: center;
-//     padding-top: 150px;
-//     font-size: 30px;
-// }
+// допполнительнык блоки  -  потом удалить
+.empty {    
+    height: 300px;
+    // background-color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+}
+.buttons {
+    // background-color: $bg-color;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0,min-content));
+    gap: 40px;
+    justify-content: space-between;
+}

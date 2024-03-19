@@ -104,13 +104,12 @@
     &__button {
         margin-top: 64px;
         display: flex;
-        // justify-content: space-between;
         align-items: center;
-        button {
-            border: none;
-            color: $Dark_Grayish;
-            background-color: $Lightest;
-        }
+        // button {
+        //     border: none;
+        //     color: $Dark_Grayish;
+        //     background-color: $Lightest;
+        // }
         div {
             max-width: 434px;
             margin-left: 16px;

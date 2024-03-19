@@ -28,18 +28,10 @@
     }
     &__buttons {
         margin-top: 64px;  
-        display: flex;      
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, min-content));
+        gap: 8px;      
     } 
-    .request_call {
-            background: $medium;
-            border: none;
-            color: $bg-color;        
-        }   
-    .howitworks {
-            margin-left: 8px;
-            border-color: $medium;
-            color: $medium;  
-        }
     &__mainfigure {
         border-radius: 36px;
         width: 720px; //подобрал    
@@ -96,9 +88,7 @@
         &__group1 {
             box-sizing: border-box;
             width: 409px; //подобрал
-            height: 242px;   //подобрал
-            // width: 401px; //подобрал content box
-            // height: 232px;   //подобрал         
+            height: 242px;   //подобрал     
             border-radius: 36px 36px 16px 36px;
             border: 5px solid $dark;
             
