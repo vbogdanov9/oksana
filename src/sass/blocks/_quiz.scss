@@ -1,0 +1,128 @@
+
+.quiz {
+    &__frame {
+        position: relative;
+    }
+    &__overlay {
+    // разработка
+        position: absolute;
+        // backdrop-filter: blur(5px);
+        // z-index: 5;
+        width: 1600px;
+        height: 1000px;
+
+    // продакшн:  
+        // display: none;
+        // position: fixed;
+        top: 0;
+        // width: 100%;
+        // height: 100%;
+        // background-color: #00000066;
+        background-color: #000000;
+        opacity: 0.4;
+        // opacity: 0.561;
+
+        // background: #00000066;
+    }
+    &__question {
+        // позиционирование
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        // z-index: 10;
+
+        // отображение
+        max-width: 1382px;        
+        background-color: $bg-color;
+        border-radius: 36px;
+        padding: 64px;
+
+        // содержимое
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+    }
+    &__title {
+        display: grid;
+        grid-template-columns: min-content auto;
+        column-gap: 8px;
+        color: $dark;
+    }
+    &__options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 32px;
+    }
+    &__option {
+        width: 617px;
+        height: auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        border: none;
+        background-color: $Lightest;
+        border-radius: 36px;
+        font-family: Raleway;
+        font-size: 32px;
+        font-weight: 500;   
+        text-align: center;
+        color: $primary;
+        box-shadow: none;
+        &:focus {
+            background-color: $Dark_Grayish;
+            color: $Lightest;
+            border: none;
+            box-shadow: none;
+        }
+        &:hover {
+            background-color: $Dark_Grayish;
+            color: $Lightest;
+            border: none;
+            box-shadow: none;
+        }
+        &:active {
+            background-color: $Dark_Grayish;
+            color: $Lightest;
+            border: none;
+            box-shadow: none;     
+        } 
+    }
+    &__implementation {
+        display: grid;
+        grid-template-columns: auto min-content;
+        column-gap: 95px;
+    }
+    &__next {
+        justify-self: end;
+        color: $Dark_Grayish;
+        border-color: $Dark_Grayish;
+    }
+    &__progress {
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+        .text {
+            justify-self: end;
+            font-family: Raleway;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            color: $Dark_Grayish;
+        }
+        .bar {
+            width: 100%;
+            height: 8px;
+            background-color: $about__scroll-stripe;
+            border-radius: 4px;
+            &_active {                
+                height: 100%;
+                border-radius: 4px;
+                background-color: $Dark_Grayish;
+            }
+        }
+    }    
+}
+
