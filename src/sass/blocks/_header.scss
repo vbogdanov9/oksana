@@ -1,7 +1,4 @@
 .header_sticky { 
-    box-sizing: border-box;
-    height: 137px;    
-    // height: 136px; content-box
     position: sticky;
     top: 0;    
     border-bottom: 1px solid $header_underline;
@@ -18,9 +15,15 @@
         &__whatsapp {
             display: flex;
             align-items: center;
+            &:hover {
+                cursor: pointer;
+            }
+            &-icon {
+                height: 100%;
+            }
         }
         &__whatsapp-number {
-            padding-left: 5px;
+            padding-left: 8px;
             font-family: Roboto Slab;
             font-size: 24px;
             font-weight: 500;

@@ -149,6 +149,7 @@ h3 {
   font-family: Philosopher;
   font-size: 26px;
   font-weight: 700;
+  line-height: 29.12px;
   letter-spacing: 0.25px;
 }
 .logo__subtitle {
@@ -156,11 +157,10 @@ h3 {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.75px;
+  line-height: 21.6px;
 }
 
 .header_sticky {
-  box-sizing: border-box;
-  height: 137px;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #A9A69E;
@@ -180,8 +180,14 @@ h3 {
   display: flex;
   align-items: center;
 }
+.header_sticky .header__whatsapp:hover {
+  cursor: pointer;
+}
+.header_sticky .header__whatsapp-icon {
+  height: 100%;
+}
 .header_sticky .header__whatsapp-number {
-  padding-left: 5px;
+  padding-left: 8px;
   font-family: Roboto Slab;
   font-size: 24px;
   font-weight: 500;
@@ -1093,6 +1099,7 @@ h3 {
   -moz-column-gap: 8px;
        column-gap: 8px;
   color: #0D1E4F;
+  line-height: 48px;
 }
 .quiz__options {
   display: grid;
@@ -1111,6 +1118,7 @@ h3 {
   border-radius: 36px;
   font-family: Raleway;
   font-size: 32px;
+  line-height: 48px;
   font-weight: 500;
   text-align: center;
   color: #000036;
@@ -1173,6 +1181,33 @@ h3 {
   background-color: #373D4F;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1190px;
+  }
+  .logo {
+    color: #0A0A4A;
+    text-align: left;
+  }
+  .logo__title {
+    font-size: 20px;
+    line-height: 22.4px;
+    letter-spacing: 0.5px;
+  }
+  .logo__subtitle {
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0.5px;
+  }
+  .header_sticky .header {
+    padding-left: 0;
+    padding-right: 0;
+    height: 96px;
+  }
+  .header_sticky .header__whatsapp {
+    height: 32px;
+  }
+}
 .empty {
   height: 300px;
   text-align: center;
