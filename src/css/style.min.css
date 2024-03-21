@@ -1191,10 +1191,6 @@ h3 {
     width: 191px;
     height: 54px;
   }
-  .logo {
-    color: #0A0A4A;
-    text-align: left;
-  }
   .logo__title {
     font-size: 20px;
     line-height: 22.4px;
@@ -1382,6 +1378,109 @@ h3 {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+  button {
+    width: 151px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 18.46px;
+  }
+  .logo__title {
+    font-size: 17px;
+    line-height: 19.04px;
+    letter-spacing: unset;
+  }
+  .logo__subtitle {
+    font-size: 12px;
+    line-height: 6px;
+    letter-spacing: unset;
+  }
+  h3 {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .header_sticky .header {
+    height: 87px;
+    padding: 0;
+  }
+  .header_sticky .header__whatsapp {
+    height: 20px;
+  }
+  .header_sticky .header__whatsapp-number {
+    font-size: 14px;
+    line-height: 18.46px;
+  }
+  .hero {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .hero__wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px 0 32px 0;
+    justify-items: center;
+  }
+  .hero__title {
+    margin: 0;
+    padding: 0 3%;
+    font-size: 29px;
+    line-height: 31.9px;
+    text-align: center;
+  }
+  .hero__subtitle {
+    text-align: center;
+  }
+  .hero__buttons {
+    margin-top: 32px;
+    justify-content: center;
+  }
+  .hero__mainfigure {
+    margin-top: 40px;
+    width: 288px;
+    height: 228px;
+  }
+  .hero .mainfigure__group1-bg {
+    width: 170.84px;
+    height: 103.94px;
+  }
+  .hero .mainfigure__group1 {
+    width: 163.84px;
+    height: 96.94px;
+    padding: 0 11px;
+  }
+  .hero .mainfigure__group1 .text1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .hero .mainfigure__group1 .text2 {
+    line-height: 14px;
+  }
+  .hero .mainfigure__middle {
+    height: 49px;
+  }
+  .hero .mainfigure__group2-bg {
+    width: 114.05px;
+  }
+  .hero .mainfigure__group2 {
+    width: 107.05px;
+    height: 68.22px;
+    margin-top: 7px;
+    margin-left: 7px;
+  }
+  .hero .mainfigure__group2 .group2__text1 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .hero .mainfigure__group2 .group2__text2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .hero__lawreference {
+    text-align: center;
   }
 }
 .empty {
