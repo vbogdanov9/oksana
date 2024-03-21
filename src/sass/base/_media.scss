@@ -2,6 +2,14 @@
     .container {
         max-width: 1190px;
     }
+    h3 {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+    button {
+        width: 191px;
+        height: 54px;
+    }
     .logo {
         color: $logo-text-color;
         text-align: left;
@@ -28,5 +36,87 @@
 
             }
         }
+    }
+    .hero {
+        padding-top: 0;  
+        &__wrapper {
+            min-height: 533px;
+            padding: 56px 0 56px 0;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 52.8px;         
+        }
+        &__subtitle {
+            margin-top: 15px;        
+        }
+        &__buttons {
+            margin-top: 42px;    
+        } 
+        &__mainfigure {            
+            width: 538px;
+            height: 421px;   
+        }   
+        .mainfigure {
+            &__group1-bg {
+                width: 319px;
+                height: 192px;
+            }
+            &__group1 {
+                width: 307px;
+                height: 180px;
+                border-radius: 36px 36px 24px 36px;
+                border-width: 4px;
+                padding: 0 35px 0 32px;                        
+                .text1 {
+                    font-size: 64px;
+                    // line-height: 84.41px;
+                    line-height: 60px;
+                    letter-spacing: 1.5px;
+                }
+                .text2  {
+                    font-size: 16px;
+                    line-height: 20.8px;
+                    // line-height: 10px;
+                    letter-spacing: 0.5px;
+                }
+            }
+            &__middle {
+                height: 91px;    
+            }
+
+            &__bottom {
+                height: 138px;
+
+             }
+            &__group2-bg {
+                 width: 211px;  //подобрал           
+                border-radius: 36px 0 0 0;
+            } 
+            &__group2 {
+                margin-top: 12px;
+                margin-left: 12px;
+                width: 199px;
+                height: 126px;            
+                border-radius: 24px 36px 36px 36px;
+                border-width: 4px;
+                .group2__text1 {
+                    letter-spacing: 0px;
+                    font-size: 14px;
+                    line-height: 18.46px;
+                }
+                .group2__text2 {
+                    font-size: 48px;
+                    line-height: 48px;
+                }    
+            }
+        }
+        &__lawreference {
+            max-width: 519px;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 1.5px;
+        }   
+   
     }
 }

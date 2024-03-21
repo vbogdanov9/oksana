@@ -2,9 +2,11 @@
     padding-top: 50px;  
     padding-bottom: 80px;
     &__wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto min-content; 
         justify-content: space-between;
-        align-items: flex-start;  
+        column-gap: 2%;
+
     }
     &__frame40 {
         max-width: 580px;
@@ -36,6 +38,7 @@
         border-radius: 36px;
         width: 720px; //подобрал    
         height: 565px; //подобрал    
+
         background-image: url(../images/main_figure.jpg);        
         background-size: auto 100%;
         background-position: center center;
@@ -43,10 +46,12 @@
          //пробую затемнить исходную картинку, не совсем верно:
         background-color: $bg-color;
         background-blend-mode: multiply;
+
         font-family: Roboto Slab;
         font-weight: 400;
         text-align: left;   
-        color: $primary;
+        color: $primary;       
+
         .rounded_corner {
             position: relative;
             width: 50px;  //достаточно?
@@ -69,15 +74,13 @@
                 .shadow {
                     right:0;
                 }
-            }
-            
+            }            
         }  
     }
     .mainfigure {  
         &__top {
             display: flex;
             justify-content: flex-start;
-            // width: 100%;
         }
         &__group1-bg {
             background-color: $bg-color;
@@ -86,22 +89,19 @@
             border-radius: 0 0 36px 0;
         } 
         &__group1 {
-            box-sizing: border-box;
             width: 409px; //подобрал
             height: 242px;   //подобрал     
             border-radius: 36px 36px 16px 36px;
             border: 5px solid $dark;
-            
-            .group1__text1 {
-                margin-top: 45px; //подобрал
-                margin-left: 31px; //подобрал 
+            padding: 0 29px 0 39px;
+            display: flex;
+            align-items: center;            
+            .text1 {             
                 font-size: 79px; //подобрал
                 line-height: 97px;
                 letter-spacing: 1.8px; //подобрал                
             }
-            .group1__text2  {
-                letter-spacing: 1.1px; //подобрал    
-                margin-left: 35px; //подобрал     
+            .text2  {
                 font-size: 20px;      
                 line-height: 29px; 
             }
@@ -123,33 +123,28 @@
             border-radius: 36px 0 0 0;
         } 
         &__group2 {
-            box-sizing: border-box;
-            height: 170px;   //подобрал   
-
-            // height: 160px;   //подобрал    
-
+            height: 170px;   //подобрал
             margin-top: 16px;
             margin-left: 16px;
-     
             border-radius: 16px 36px 36px 36px;
             border: 5px solid $dark;
-            
+            padding: 0 12px ;
+            display: flex;
+            align-items: center;     
             .group2__text1 {
-                margin-top: 35px; //подобрал     
-                margin-left: 25px; //подобрал     
+                // margin-top: 35px; //подобрал     
+                // margin-left: 25px; //подобрал     
                 font-size: 16px;
                 line-height: 21px;
                 letter-spacing: 1px;
-
             }
             .group2__text2 {
-                margin-top: 8px; //подобрал
-                margin-left: 26px; //подобрал
+                // margin-top: 8px; //подобрал
+                // margin-left: 26px; //подобрал
                 font-size: 65px; //подобрал
                 line-height: 65px; //подобрал
                 letter-spacing: 1.4px; //подобрал
             }
-
         }
     }
     &__lawreference {

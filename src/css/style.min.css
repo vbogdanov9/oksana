@@ -201,9 +201,11 @@ h3 {
   padding-bottom: 80px;
 }
 .hero__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto min-content;
   justify-content: space-between;
-  align-items: flex-start;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
 }
 .hero__frame40 {
   max-width: 580px;
@@ -279,22 +281,20 @@ h3 {
   border-radius: 0 0 36px 0;
 }
 .hero .mainfigure__group1 {
-  box-sizing: border-box;
   width: 409px;
   height: 242px;
   border-radius: 36px 36px 16px 36px;
   border: 5px solid #0D1E4F;
+  padding: 0 29px 0 39px;
+  display: flex;
+  align-items: center;
 }
-.hero .mainfigure__group1 .group1__text1 {
-  margin-top: 45px;
-  margin-left: 31px;
+.hero .mainfigure__group1 .text1 {
   font-size: 79px;
   line-height: 97px;
   letter-spacing: 1.8px;
 }
-.hero .mainfigure__group1 .group1__text2 {
-  letter-spacing: 1.1px;
-  margin-left: 35px;
+.hero .mainfigure__group1 .text2 {
   font-size: 20px;
   line-height: 29px;
 }
@@ -314,23 +314,21 @@ h3 {
   border-radius: 36px 0 0 0;
 }
 .hero .mainfigure__group2 {
-  box-sizing: border-box;
   height: 170px;
   margin-top: 16px;
   margin-left: 16px;
   border-radius: 16px 36px 36px 36px;
   border: 5px solid #0D1E4F;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
 }
 .hero .mainfigure__group2 .group2__text1 {
-  margin-top: 35px;
-  margin-left: 25px;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 1px;
 }
 .hero .mainfigure__group2 .group2__text2 {
-  margin-top: 8px;
-  margin-left: 26px;
   font-size: 65px;
   line-height: 65px;
   letter-spacing: 1.4px;
@@ -1185,6 +1183,14 @@ h3 {
   .container {
     max-width: 1190px;
   }
+  h3 {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+  button {
+    width: 191px;
+    height: 54px;
+  }
   .logo {
     color: #0A0A4A;
     text-align: left;
@@ -1206,6 +1212,81 @@ h3 {
   }
   .header_sticky .header__whatsapp {
     height: 32px;
+  }
+  .hero {
+    padding-top: 0;
+  }
+  .hero__wrapper {
+    min-height: 533px;
+    padding: 56px 0 56px 0;
+  }
+  .hero__title {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+  .hero__subtitle {
+    margin-top: 15px;
+  }
+  .hero__buttons {
+    margin-top: 42px;
+  }
+  .hero__mainfigure {
+    width: 538px;
+    height: 421px;
+  }
+  .hero .mainfigure__group1-bg {
+    width: 319px;
+    height: 192px;
+  }
+  .hero .mainfigure__group1 {
+    width: 307px;
+    height: 180px;
+    border-radius: 36px 36px 24px 36px;
+    border-width: 4px;
+    padding: 0 35px 0 32px;
+  }
+  .hero .mainfigure__group1 .text1 {
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+  }
+  .hero .mainfigure__group1 .text2 {
+    font-size: 16px;
+    line-height: 20.8px;
+    letter-spacing: 0.5px;
+  }
+  .hero .mainfigure__middle {
+    height: 91px;
+  }
+  .hero .mainfigure__bottom {
+    height: 138px;
+  }
+  .hero .mainfigure__group2-bg {
+    width: 211px;
+    border-radius: 36px 0 0 0;
+  }
+  .hero .mainfigure__group2 {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: 199px;
+    height: 126px;
+    border-radius: 24px 36px 36px 36px;
+    border-width: 4px;
+  }
+  .hero .mainfigure__group2 .group2__text1 {
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 18.46px;
+  }
+  .hero .mainfigure__group2 .group2__text2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .hero__lawreference {
+    max-width: 519px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1.5px;
   }
 }
 .empty {
