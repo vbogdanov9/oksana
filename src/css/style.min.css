@@ -1179,7 +1179,7 @@ h3 {
   background-color: #373D4F;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
   .container {
     max-width: 1190px;
   }
@@ -1206,8 +1206,6 @@ h3 {
     letter-spacing: 0.5px;
   }
   .header_sticky .header {
-    padding-left: 0;
-    padding-right: 0;
     height: 96px;
   }
   .header_sticky .header__whatsapp {
@@ -1287,6 +1285,103 @@ h3 {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 1279px) {
+  .container {
+    max-width: 728px;
+  }
+  h3 {
+    font-size: 17px;
+    line-height: 23.8px;
+  }
+  button {
+    width: 189px;
+  }
+  .header_sticky .header {
+    height: 71px;
+  }
+  .header_sticky .header__whatsapp {
+    height: 24px;
+  }
+  .header_sticky .header__whatsapp-number {
+    font-size: 17px;
+    line-height: 22.42px;
+  }
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .hero__wrapper {
+    min-height: 310px;
+    padding: 24px 0 32px 0;
+  }
+  .hero__title {
+    font-size: 35px;
+    line-height: 38.5px;
+  }
+  .hero__mainfigure {
+    width: 326px;
+    height: 254px;
+    border-radius: 18px;
+  }
+  .hero__mainfigure .rounded_corner .shadow {
+    border-radius: 18px;
+  }
+  .hero .mainfigure__group1-bg {
+    width: 194px;
+    height: 116px;
+    border-radius: 0 0 18px 0;
+  }
+  .hero .mainfigure__group1 {
+    width: 186px;
+    height: 108px;
+    border-radius: 18px 18px 12px 18px;
+    border-width: 2.5px;
+    padding: 0 14px;
+  }
+  .hero .mainfigure__group1 .text1 {
+    font-size: 42px;
+    line-height: 40px;
+    letter-spacing: 0.75px;
+  }
+  .hero .mainfigure__group1 .text2 {
+    font-size: 14px;
+    line-height: 15.4px;
+    letter-spacing: 0.25px;
+  }
+  .hero .mainfigure__middle {
+    height: 54px;
+  }
+  .hero .mainfigure__bottom {
+    height: auto;
+  }
+  .hero .mainfigure__group2-bg {
+    width: 129px;
+    border-radius: 18px 0 0 0;
+  }
+  .hero .mainfigure__group2 {
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 121px;
+    height: 76px;
+    border-width: 2px;
+    border-radius: 12px 18px 18px 18px;
+    padding: 0 10px;
+  }
+  .hero .mainfigure__group2 .group2__text1 {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .hero .mainfigure__group2 .group2__text2 {
+    font-size: 29px;
+    line-height: 30px;
+  }
+  .hero__lawreference {
+    max-width: 316px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
   }
 }
 .empty {
