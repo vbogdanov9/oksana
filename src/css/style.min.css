@@ -348,6 +348,10 @@ h3 {
   padding-top: 132px;
   padding-bottom: 132px;
 }
+.about__frame {
+  max-width: 1268px;
+  margin: 0 auto;
+}
 .about__item {
   display: flex;
 }
@@ -358,17 +362,10 @@ h3 {
   border-radius: 36px;
 }
 .about__info {
-  position: relative;
   margin-left: 125px;
 }
 .about__header {
   height: 85px;
-  font-family: Raleway;
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000036;
 }
 .about__divider {
   width: 569px;
@@ -393,11 +390,12 @@ h3 {
   --swiper-scrollbar-border-radius: 4px;
   --swiper-scrollbar-bottom: 103px;
 }
+.about .swiper-scrollbar, .about .swiper-pagination {
+  max-width: 686px;
+  left: 579px;
+}
 .about .swiper-scrollbar {
-  width: 686px;
   background-color: #B9B9B9;
-  left: auto;
-  right: 115px;
 }
 .about .swiper-scrollbar-drag {
   background-color: #373D4F;
@@ -405,9 +403,6 @@ h3 {
 .about .swiper-pagination {
   --swiper-pagination-bullet-border-radius: 0;
   --swiper-pagination-bullet-inactive-opacity: 1;
-  width: 686px;
-  left: auto;
-  right: 115px;
   bottom: 45px;
   display: flex;
   justify-content: space-around;
@@ -1285,6 +1280,56 @@ h3 {
     line-height: 21px;
     letter-spacing: 1.5px;
   }
+  h2 {
+    letter-spacing: 0.2px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .about {
+    padding: 100px;
+  }
+  .about__frame {
+    max-width: 1000px;
+  }
+  .about__photo {
+    width: 287px;
+    height: 382px;
+  }
+  .about__info {
+    margin-left: 114px;
+  }
+  .about__header {
+    height: 69px;
+  }
+  .about__divider {
+    width: 389px;
+  }
+  .about__descr {
+    margin-top: 34px;
+    max-width: 597px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+  .about .swiper {
+    --swiper-scrollbar-size: 4px;
+    --swiper-scrollbar-border-radius: 2px;
+    --swiper-scrollbar-bottom: 59px;
+  }
+  .about .swiper-scrollbar, .about .swiper-pagination {
+    max-width: 597px;
+    left: 401px;
+  }
+  .about .swiper-pagination {
+    bottom: 17.23px;
+  }
+  .about .swiper-pagination-bullet {
+    width: 36.54px;
+    height: 19.88px;
+  }
+  .about .swiper-pagination-bullet-active .dot {
+    width: 10.46px;
+    height: 14.06px;
+  }
 }
 @media (max-width: 1279px) {
   .container {
@@ -1293,6 +1338,10 @@ h3 {
   h3 {
     font-size: 17px;
     line-height: 23.8px;
+  }
+  h2 {
+    font-size: 29px;
+    line-height: 31.9px;
   }
   button {
     width: 189px;
@@ -1381,6 +1430,46 @@ h3 {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.5px;
+  }
+  .about {
+    padding: 40px 0 79.08px 0;
+  }
+  .about__photo {
+    width: 229px;
+    height: 364px;
+  }
+  .about__info {
+    margin-left: 20px;
+  }
+  .about__header {
+    padding: 18.5px 0;
+  }
+  .about__divider {
+    width: 278px;
+  }
+  .about__descr {
+    max-width: 455px;
+    font-size: 14px;
+    line-height: 22.4px;
+    letter-spacing: 0.5px;
+  }
+  .about .swiper {
+    --swiper-scrollbar-bottom: 54px;
+  }
+  .about .swiper-scrollbar, .about .swiper-pagination {
+    max-width: 415px;
+    left: 249px;
+  }
+  .about .swiper-pagination {
+    bottom: 16px;
+  }
+  .about .swiper-pagination-bullet {
+    width: 25.47px;
+    height: 18.43px;
+  }
+  .about .swiper-pagination-bullet-active .dot {
+    width: 7.3px;
+    height: 13.03px;
   }
 }
 @media (max-width: 767px) {

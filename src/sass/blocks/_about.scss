@@ -1,8 +1,12 @@
 .about {
     padding-top: 132px;  
     padding-bottom: 132px;
+    &__frame {
+        max-width: 1268px;
+        margin: 0 auto;
+    }
     &__item {
-        display: flex;        
+        display: flex;
     }
     &__photo {
         display: block;
@@ -11,17 +15,11 @@
         border-radius: 36px;
     }
     &__info {
-        position: relative;
+        // position: relative;
         margin-left: 125px;
     }
     &__header {
         height: 85px;
-        font-family: Raleway;
-        font-size: 48px;
-        font-weight: 300; // в макете
-        letter-spacing: 0.2px;
-        text-align: left;
-        color: $primary;
     }
     &__divider {
         width: 569px;
@@ -45,21 +43,19 @@
         --swiper-scrollbar-size: 8px;
         --swiper-scrollbar-border-radius: 4px;
         --swiper-scrollbar-bottom: 103px;
+        &-scrollbar,  &-pagination {
+            max-width: 686px;
+            left: 579px;
+        }
         &-scrollbar {
-            width: 686px;
             background-color: $about__scroll-stripe;
-            left: auto;
-            right: 115px;
             &-drag {
                 background-color: $Dark_Grayish;
             }
         }
         &-pagination {
             --swiper-pagination-bullet-border-radius: 0;
-            --swiper-pagination-bullet-inactive-opacity: 1;            
-            width: 686px;
-            left: auto;
-            right: 115px;
+            --swiper-pagination-bullet-inactive-opacity: 1;
             bottom: 45px;
             display: flex;
             justify-content: space-around;

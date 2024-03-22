@@ -115,6 +115,58 @@
             letter-spacing: 1.5px;
         }
     }
+    h2 {
+        letter-spacing: 0.2px; 
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .about {
+        padding: 100px;
+        &__frame {
+            max-width: 1000px;
+        }
+        &__photo {
+            width: 287px;
+            height: 382px;
+        }
+        &__info {
+            margin-left: 114px;
+        }
+        &__header {
+            height: 69px;
+        }
+        &__divider {
+            width: 389px;
+        }
+        &__descr {
+            margin-top: 34px;
+            max-width: 597px;
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+        .swiper {
+            --swiper-scrollbar-size: 4px;
+            --swiper-scrollbar-border-radius: 2px;
+            --swiper-scrollbar-bottom: 59px;            
+            &-scrollbar, &-pagination {
+                max-width: 597px;
+                left: 401px;
+                }
+            &-pagination {
+                bottom: 17.23px;
+                &-bullet {
+                    width: 36.54px;
+                    height: 19.88px;
+                    &-active {
+                        .dot {
+                            width: 10.46px;
+                            height: 14.06px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1279px) {
@@ -124,6 +176,10 @@
     h3 {
         font-size: 17px;
         line-height: 23.8px;
+    }
+    h2 {
+        font-size: 29px;
+        line-height: 31.9px;
     }
     button {
         width: 189px;
@@ -220,7 +276,49 @@
             line-height: 18px;
             letter-spacing: 0.5px;
         }
-    }    
+    }  
+    .about {
+        padding: 40px 0 79.08px 0;
+        &__photo {
+            width: 229px;
+            height: 364px;
+        }
+        &__info {
+            margin-left: 20px;
+        }
+        &__header {
+            padding: 18.5px 0;
+        }
+        &__divider {
+            width: 278px;
+        }
+        &__descr {
+            max-width: 455px;
+            font-size: 14px;
+            line-height: 22.4px;
+            letter-spacing: 0.5px;
+        }
+        .swiper {
+            --swiper-scrollbar-bottom: 54px;
+            &-scrollbar, &-pagination {
+                max-width: 415px;
+                left: 249px;
+            }
+            &-pagination {
+                bottom: 16px;
+                &-bullet {
+                    width: 25.47px;
+                    height: 18.43px;
+                    &-active {
+                        .dot {
+                            width: 7.3px;
+                            height: 13.03px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
 
 @media (max-width: 767px) {

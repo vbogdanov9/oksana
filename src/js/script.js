@@ -13,11 +13,11 @@ const swiper = new Swiper('.swiper', {
       },
     },
 
-    autoplay: {
-      delay:	3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction:	false,
-    },
+    // autoplay: {
+    //   delay:	3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction:	false,
+    // },
 
     scrollbar: {
       el: '.swiper-scrollbar',
