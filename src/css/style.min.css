@@ -1574,6 +1574,46 @@ h3 {
   .hero__lawreference {
     text-align: center;
   }
+  .about {
+    padding: 20px 0 44px 0;
+  }
+  .about__item {
+    flex-direction: column;
+  }
+  .about__photo {
+    width: 288px;
+    height: 388px;
+    margin: 0 auto;
+  }
+  .about__info {
+    margin: auto;
+    min-height: 394px;
+  }
+  .about__header {
+    margin-top: 20px;
+  }
+  .about__divider {
+    width: 100%;
+  }
+  .about__descr {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .about .swiper {
+    --swiper-scrollbar-bottom: 55px;
+  }
+  .about .swiper-scrollbar, .about .swiper-pagination {
+    max-width: 100%;
+    left: 0;
+  }
+  .about .swiper-pagination-bullet {
+    width: 29.4px;
+    height: 18.43px;
+  }
+  .about .swiper-pagination-bullet-active .dot {
+    width: 8.42px;
+    height: 13.03px;
+  }
 }
 .empty {
   height: 300px;
