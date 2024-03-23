@@ -435,40 +435,35 @@ h3 {
 }
 
 .stories {
+  padding: 48px 0;
   background-color: #373D4F;
 }
 .stories .container {
-  height: 276px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .stories__frame {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid #A27A3C;
-  border-radius: 29px;
-  box-sizing: border-box;
-  width: 155px;
-  height: 200px;
-}
-.stories__content {
-  box-sizing: border-box;
+  align-items: end;
   width: 135px;
   height: 178px;
   border-radius: 18px;
   background-image: url(../images/oksana_2.jpg);
-  background-size: 160% auto;
-  background-position: center center;
+  background-size: 155% auto;
+  background-position: 45% 70%;
   background-repeat: no-repeat;
+  box-shadow: 0px 4px 24px 0px rgba(25, 31, 49, 0.2), 0px 0px 0px 5px #373D4F, 0px 0px 0px 10px #A27A3C;
 }
 .stories__text {
   font-family: Raleway;
-  color: white;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
-  padding-top: 100px;
   font-weight: 700;
+  transform: scale(0.95, 1);
+  padding-bottom: 5%;
 }
 
 .service {
@@ -1330,6 +1325,20 @@ h3 {
     width: 10.46px;
     height: 14.06px;
   }
+  .stories {
+    padding: 40px 0;
+  }
+  .stories__frame {
+    width: 104px;
+    height: 120px;
+    background-size: 140% auto;
+    box-shadow: 0px 4px 24px 0px rgba(25, 31, 49, 0.2), 0px 0px 0px 7px #373D4F, 0px 0px 0px 10px #A27A3C;
+  }
+  .stories__text {
+    font-size: 11px;
+    line-height: 15px;
+    transform: scale(0.9, 1);
+  }
 }
 @media (max-width: 1279px) {
   .container {
@@ -1470,6 +1479,17 @@ h3 {
   .about .swiper-pagination-bullet-active .dot {
     width: 7.3px;
     height: 13.03px;
+  }
+  .stories {
+    overflow: hidden;
+  }
+  .stories .container {
+    justify-content: start;
+    padding-left: 20px;
+  }
+  .stories__frame {
+    margin-right: 56px;
+    flex-shrink: 0;
   }
 }
 @media (max-width: 767px) {

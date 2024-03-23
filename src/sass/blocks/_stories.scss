@@ -1,40 +1,31 @@
 .stories {
+    padding: 48px 0;
     background-color:$Dark_Grayish;
     .container {
-        height: 276px;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }       
     &__frame {
-        // margin-top: 10px;  
         display: flex;
-        justify-content: center;
-        align-items: center;        
-        border: 5px solid $stories_border; 
-        border-radius: 29px; 
-
-        box-sizing: border-box;            
-        width: 155px;
-        height: 200px;               
-        // width: 140px; content-box
-        // height: 183px;
-    }
-    &__content {
-        box-sizing: border-box;
+        align-items: end;        
         width: 135px;
-        height: 178px;
+        height: 178px; 
         border-radius: 18px;
         background-image: url(../images/oksana_2.jpg);        
-        background-size: 160% auto;
-        background-position: center center;
-        background-repeat: no-repeat;        
+        background-size: 155% auto;
+        background-position: 45% 70%;
+        background-repeat: no-repeat; 
+        box-shadow:  0px 4px 24px 0px $stories_shadow, 0px 0px 0px 5px $Dark_Grayish, 0px 0px 0px 10px $stories_border;
     }
     &__text {
         font-family: Raleway;
-        color: white;
+        color:$white;
+        font-size: 15px;
+        line-height: 20px;
         text-align: center;
-        padding-top: 100px;
         font-weight: 700;
+        transform: scale(0.95, 1);
+        padding-bottom: 5%;
     }
 }

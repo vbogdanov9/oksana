@@ -167,6 +167,21 @@
             }
         }
     }
+    .stories {
+        padding: 40px 0;
+        &__frame {     
+            width: 104px;
+            height: 120px;      
+            background-size: 140% auto;
+            box-shadow:  0px 4px 24px 0px $stories_shadow, 0px 0px 0px 7px $Dark_Grayish, 0px 0px 0px 10px $stories_border;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 15px;
+            transform: scale(0.9, 1);
+        }
+    }
+  
 }
 
 @media (max-width: 1279px) {
@@ -319,6 +334,17 @@
             }
         }
     }  
+    .stories {
+        overflow: hidden;
+        .container {
+            justify-content: start;  
+            padding-left: 20px;                    
+        }
+        &__frame {     
+            margin-right: 56px;
+            flex-shrink: 0; 
+        }
+    }
 }
 
 @media (max-width: 767px) {
