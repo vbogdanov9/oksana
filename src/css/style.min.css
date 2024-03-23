@@ -206,12 +206,13 @@ h3 {
   justify-content: space-between;
   -moz-column-gap: 2%;
        column-gap: 2%;
+  align-items: top;
 }
 .hero__frame40 {
   max-width: 580px;
 }
 .hero__title {
-  margin-top: 35px;
+  margin-top: 6%;
   font-family: Raleway;
   font-size: 62px;
   font-weight: 300;
@@ -1372,8 +1373,10 @@ h3 {
   .hero__wrapper {
     min-height: 310px;
     padding: 24px 0 32px 0;
+    align-items: center;
   }
   .hero__title {
+    margin-top: 0;
     font-size: 35px;
     line-height: 38.5px;
   }
@@ -1606,8 +1609,7 @@ h3 {
     margin: 0 auto;
   }
   .about__info {
-    margin: auto;
-    min-height: 394px;
+    margin: auto auto 56px auto;
   }
   .about__header {
     margin-top: 20px;
@@ -1618,6 +1620,7 @@ h3 {
   .about__descr {
     margin-top: 20px;
     max-width: 100%;
+    margin-bottom: 32px;
   }
   .about .swiper {
     --swiper-scrollbar-bottom: 55px;
@@ -1633,6 +1636,23 @@ h3 {
   .about .swiper-pagination-bullet-active .dot {
     width: 8.42px;
     height: 13.03px;
+  }
+  .stories {
+    padding: 20px 0;
+  }
+  .stories .container {
+    padding-left: 4px;
+  }
+  .stories__frame {
+    width: 60px;
+    height: 80px;
+    margin-right: 32px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px 0px rgba(25, 31, 49, 0.2), 0px 0px 0px 4px #373D4F, 0px 0px 0px 7px #A27A3C;
+  }
+  .stories__text {
+    font-size: 6px;
+    line-height: 9px;
   }
 }
 .empty {
