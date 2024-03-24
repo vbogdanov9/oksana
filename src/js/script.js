@@ -13,11 +13,11 @@ const swiper = new Swiper('.swiper', {
       },
     },
 
-    autoplay: {
-      delay:	3000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction:	false,
-    },
+    // autoplay: {
+    //   delay:	3000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction:	false,
+    // },
 
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -39,3 +39,31 @@ const swiper = new Swiper('.swiper', {
       prevEl: ".cases__button-prev",
     },
   });
+
+
+var service_item = document.getElementsByClassName("service__item");
+// var plus = document.getElementsByClassName("plus_frame");
+var i;
+
+for (i = 0; i < service_item .length; i++) {
+  service_item[i].addEventListener("click", function() {
+
+    this.classList.toggle("service__item_active");
+  
+
+//     /* Toggle between hiding and showing the active panel */
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+  });
+}
+
+
+// let service_items = document.querySelectorAll(".service_item");
+// service_items.forEach(service_item => {
+//     let plus = service_item.querySelector(".plus_frame");
+//      plus.addEventListener("click", () => service_item.classList.toggle("service__item_active"));
+// });
