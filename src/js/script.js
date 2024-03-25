@@ -7,21 +7,21 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,      
+      // clickable: true,      
       renderBullet: function (index, className) {
       return '<div class="' + className + '"><div class="dot"></div></div>';
       },
     },
 
-    // autoplay: {
-    //   delay:	3000,
-    //   pauseOnMouseEnter: true,
-    //   disableOnInteraction:	false,
-    // },
+    autoplay: {
+      delay:	3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction:	false,
+    },
 
     scrollbar: {
       el: '.swiper-scrollbar',
-      draggable: true,
+      // draggable: true,
     },
 
     effect: 'fade',
@@ -47,19 +47,10 @@ var i;
 
 for (i = 0; i < service_item .length; i++) {
   service_item[i].addEventListener("click", function() {
-
-    this.classList.toggle("service__item_active");
-  
-
-//     /* Toggle between hiding and showing the active panel */
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
+    this.classList.toggle("service__item_active");  
   });
 }
+
 
 
 // let service_items = document.querySelectorAll(".service_item");

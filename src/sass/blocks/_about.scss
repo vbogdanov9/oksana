@@ -61,40 +61,51 @@
             justify-content: space-around;
 
             &-bullet {
-                display: none;
+                transition: 1s all;
+                // display: none;
                 width: 63px;
                 height: 30px;
                 display: flex;
                 background: none;
                 background-image: url(../icons/arrows.svg);
                 background-size: 100% 100%;   
-                &:hover {
-                    transition: 0.3s all;
-                    transform: scale(1.2); 
-                    }
-                    &:active {
-                        transform: scale(1.4); 
-                    } 
+                // &:hover {
+                //     transition: 0.3s all;
+                //     transform: scale(1.2); 
+                //     }
+                //     &:active {
+                //         transform: scale(1.4); 
+                //     } 
                 .dot {
-                    display: none;
-                }    
-                &-active {
+                    // transition: 5s all;
+                    // display: none;
                     display: block;
-                    width: 63px;
-                    height: 30px;
-                    display: flex;
-                    background: none;
-                    background-image: url(../icons/arrows.svg);
+                    width: 21.21px;
+                    height: 21.21px;
+                    margin: auto;
+                    background-image: url(../icons/dot.svg);
                     background-size: 100% 100%;
-                    .dot {                        
-                        display: block;
-                        width: 21.21px;
-                        height: 21.21px;
-                        margin: auto;
-                        background-image: url(../icons/dot.svg);
-                        background-size: 100% 100%;
-                    }
-                }
+
+                }    
+                // &-active {
+                    // transition: 1s all;
+                    // display: block;
+                    // width: 63px;
+                    // height: 30px;
+                    // display: flex;
+                    // background: none;
+                    // background-image: url(../icons/arrows.svg);
+                    // background-size: 100% 100%;
+                    // .dot {    
+                        // transition: 5s all;                    
+                        // display: block;
+                        // width: 21.21px;
+                        // height: 21.21px;
+                        // margin: auto;
+                        // background-image: url(../icons/dot.svg);
+                        // background-size: 100% 100%;
+                    // }
+                // }
             }
         }
     }

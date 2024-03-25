@@ -2,6 +2,11 @@
     .container {
         max-width: 1190px;
     }
+    h2 {
+        letter-spacing: 0.2px; 
+        font-size: 40px;
+        line-height: 44px;
+    }    
     h3 {
         font-size: 18px;
         line-height: 25.2px;
@@ -115,11 +120,7 @@
             letter-spacing: 1.5px;
         }
     }
-    h2 {
-        letter-spacing: 0.2px; 
-        font-size: 40px;
-        line-height: 44px;
-    }
+
     .about {
         padding: 100px;
         &__frame {
@@ -157,12 +158,13 @@
                 &-bullet {
                     width: 36.54px;
                     height: 19.88px;
-                    &-active {
-                        .dot {
-                            width: 10.46px;
+                    .dot {
+                            width: 14.06px;
                             height: 14.06px;
                         }
-                    }
+                    // &-active {
+                        
+                    // }
                 }
             }
         }
@@ -179,6 +181,59 @@
             font-size: 11px;
             line-height: 15px;
             transform: scale(0.9, 1);
+        }
+    }
+    .service {
+        padding: 56px 0;
+        &__frame {
+            margin-top: 40px;     
+            padding: 60px 60px 0 60px;       
+        }
+        &__picture {
+            width: 36.44859813%;
+        }
+        &__items {
+            min-width: 52.61682243%;
+            padding: 0 0 60px 0;
+            row-gap: 40px;
+        }
+        &__item {
+            column-gap: 82px;
+            row-gap: 0px;
+            align-items:center;
+            .plus_frame {
+                margin-right: 9px;
+                width: 18px;
+                height: 18px;
+                border-width: 1px;       
+            }
+            .divider {
+                margin-top: 31px;
+                height: 1px;
+                border-radius: .5px;
+            }
+            // .gap_1 {
+            //     height: 32px;
+            // }
+        }
+        .title {
+            font-size: 24px;
+            line-height: 28.18px;
+        }
+        &__item_active {
+            margin-top: 16px;
+            // .gap_1 {
+            //     height: 24px;
+            // }
+            .descr {
+                margin-top: 24px;
+                padding: 8px 16px;
+                font-size: 16px;
+                line-height: 24px;  
+            }
+            .divider {
+                margin-top: 15px;
+            }
         }
     }
   
@@ -326,12 +381,13 @@
                 &-bullet {
                     width: 25.47px;
                     height: 18.43px;
-                    &-active {
-                        .dot {
-                            width: 7.3px;
+                    .dot {
+                            width: 13.03px;
                             height: 13.03px;
                         }
-                    }
+                    // &-active {
+                        
+                    // }
                 }
             }
         }
@@ -493,12 +549,13 @@
                 &-bullet {
                     width: 29.4px;
                     height: 18.43px;
-                    &-active {
-                        .dot {
-                                width: 8.42px;
-                                height: 13.03px;
-                        }
+                    .dot {
+                            width: 10.7px;
+                            height: 10.7px;
                     }
+                    // &-active {
+                        
+                    // }
                 }
             }
         }
