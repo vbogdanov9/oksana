@@ -204,7 +204,7 @@
             align-items:center;
             .title {
                 font-size: 24px;
-                line-height: 28.18px;
+                line-height: 28px;
             }
             .plus_frame {
                 margin-right: 9px;
@@ -418,7 +418,7 @@
             padding: 0;
         }
         &__item {
-            // padding-right: 8px;
+            column-gap: 60px;
             .plus_frame {
                 margin-right: 8px;
                 border-width: 2px;    
@@ -432,16 +432,16 @@
             }
         }
         &__item_active {
-            margin-top: 16px;
+            margin-top: 0;
             .descr {
-                margin-top: 16px;
+                margin-top: 14px;
                 padding: 8px 162px 8px 16px;
                 font-size: 14px;
                 line-height: 21px;
                 border-radius: 8px;
             }
             .divider {
-                margin-top: 0;
+                display: none;                
             }
         }
         button {
@@ -456,7 +456,6 @@
         max-width: 320px;
     }
     button {
-        // width: 189px;
         width: 151px;
         height: 46px;
         font-size: 14px;
@@ -607,11 +606,9 @@
     }  
     .stories {
         padding: 20px 0;
-        // overflow: hidden;
         .container {
             padding-left: 4px;                    
         }
-
         &__frame {     
             width: 60px;
             height: 80px;      
@@ -622,7 +619,36 @@
         &__text {
             font-size: 6px;
             line-height: 9px;
-            // transform: scale(0.9, 1);
         }
+    }
+    .service {
+        &__frame {            
+            padding: 32px 16px;
+        }
+        &__items {
+            row-gap: 32px;
+        }
+        &__item {
+            column-gap: 16px;
+            .title {
+                padding-left: 8px;
+                font-size: 17px;
+                line-height: 19.96px;
+            }
+            .plus_frame {
+                width: 28px;
+                height: 28px;   
+            }
+            .divider {
+                margin-top: 19px;
+            }
+        }
+        &__item_active {
+            .descr {
+                margin-top: 20px;
+                padding: 8px 16px;
+            }
+        }
+
     }
 }

@@ -1389,7 +1389,7 @@ h3 {
   }
   .service__item .title {
     font-size: 24px;
-    line-height: 28.18px;
+    line-height: 28px;
   }
   .service__item .plus_frame {
     margin-right: 9px;
@@ -1585,6 +1585,10 @@ h3 {
     width: 100%;
     padding: 0;
   }
+  .service__item {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
   .service__item .plus_frame {
     margin-right: 8px;
     border-width: 2px;
@@ -1597,17 +1601,17 @@ h3 {
     margin-top: 29px;
   }
   .service__item_active {
-    margin-top: 16px;
+    margin-top: 0;
   }
   .service__item_active .descr {
-    margin-top: 16px;
+    margin-top: 14px;
     padding: 8px 162px 8px 16px;
     font-size: 14px;
     line-height: 21px;
     border-radius: 8px;
   }
   .service__item_active .divider {
-    margin-top: 0;
+    display: none;
   }
   .service button {
     margin-top: 32px;
@@ -1771,6 +1775,32 @@ h3 {
   .stories__text {
     font-size: 6px;
     line-height: 9px;
+  }
+  .service__frame {
+    padding: 32px 16px;
+  }
+  .service__items {
+    row-gap: 32px;
+  }
+  .service__item {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .service__item .title {
+    padding-left: 8px;
+    font-size: 17px;
+    line-height: 19.96px;
+  }
+  .service__item .plus_frame {
+    width: 28px;
+    height: 28px;
+  }
+  .service__item .divider {
+    margin-top: 19px;
+  }
+  .service__item_active .descr {
+    margin-top: 20px;
+    padding: 8px 16px;
   }
 }
 .empty {
