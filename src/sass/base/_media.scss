@@ -185,6 +185,7 @@
     }
     .service {
         padding: 56px 0;
+
         &__frame {
             margin-top: 40px;     
             padding: 60px 60px 0 60px;       
@@ -193,7 +194,7 @@
             width: 36.44859813%;
         }
         &__items {
-            min-width: 52.61682243%;
+            width: 52.61682243%;
             padding: 0 0 60px 0;
             row-gap: 40px;
         }
@@ -201,6 +202,10 @@
             column-gap: 82px;
             row-gap: 0px;
             align-items:center;
+            .title {
+                font-size: 24px;
+                line-height: 28.18px;
+            }
             .plus_frame {
                 margin-right: 9px;
                 width: 18px;
@@ -212,19 +217,10 @@
                 height: 1px;
                 border-radius: .5px;
             }
-            // .gap_1 {
-            //     height: 32px;
-            // }
         }
-        .title {
-            font-size: 24px;
-            line-height: 28.18px;
-        }
+        
         &__item_active {
             margin-top: 16px;
-            // .gap_1 {
-            //     height: 24px;
-            // }
             .descr {
                 margin-top: 24px;
                 padding: 8px 16px;
