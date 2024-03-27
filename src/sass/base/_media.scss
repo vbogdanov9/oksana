@@ -120,7 +120,6 @@
             letter-spacing: 1.5px;
         }
     }
-
     .about {
         padding: 100px;
         &__frame {
@@ -232,7 +231,45 @@
             }
         }
     }
-  
+    .cases {
+        padding: 56px 0;
+        &__header {
+            line-height: 40px;
+        }
+        &__subheader {
+            margin-top: 20px;
+            font-size: 16px;    
+            line-height: 18px;     
+        }
+        &__swiper-container {
+            width: 89.07563025%;
+            margin: 0 auto;
+        }
+        &__swiper {
+            margin-top: 40px;            
+        }
+        &__item {
+            height: 466px;
+            width: 332px;
+            padding: 40px 32px;
+            font-size: 16px;    
+            line-height: 17.6px;
+            &-top {
+                row-gap: 15.35px;
+            }
+            &-bottom {
+            line-height: 22.4px;
+            }
+        }
+        &__button {
+            &-prev {
+                left: -90px;    
+            }
+            &-next { 
+                right: -90px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1279px) {

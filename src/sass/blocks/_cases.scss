@@ -1,21 +1,15 @@
 .cases {
-    height: 895px;
     padding-top: 80px;
+    padding-bottom: 108px;
 
     &__header {
-        font-family: Raleway;
-        font-size: 48px;
-        font-weight: 300;
         line-height: 48px;
-        letter-spacing: 0.44px; // подобрал
-        text-align: left;
-        color: $primary;
         span {
             color: $active;
         }
     }
     &__subheader {
-        margin-top: 23px; // подобрал
+        margin-top: 25px; // подобрал
         font-family: Raleway;
         font-size: 20px;
         font-weight: 400;
@@ -25,44 +19,47 @@
         color: $cases_subheader;
     }    
 
-    &__item-frame {
+    &__item {
         height: 518px;
         width: 404px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $grey_bg;
-        border-radius: 42px;
-    }
-    &__item {   
-        position: relative;     
-        width: 356px;
-        height: 470px;   
-        padding-left: 32px;     
+        border-radius: 42px;   
+        border: 24px solid $grey_bg;
+        
+
+        padding: 36px 32px 36px 32px;      
         background-image: url(../images/cases_item-bg.jpg);        
         background-size: 100% auto;
         background-position: center center;
-        background-repeat: no-repeat;
-        border-radius: 18px;   
+        background-repeat: no-repeat;        
         background-color: $grey_bg;
         background-blend-mode: multiply;
+
+        // box-shadow: 0px 0px 0px 25px $grey_bg;
+        // border-radius: 18px; 
+        // height: 470px;
+        // width: 356px;      
+
         font-family: Raleway;
         font-size: 18px;
+        line-height: 19.8px;
         font-weight: 500;
         text-align: left;
-        color: $cases_item-text;        
-        &-text1 {
-            margin-top: 28px;
-            line-height: 37px;
-            letter-spacing: 0.5px;
+        color: $cases_item-text;   
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-content: space-between; 
 
+        &-top {
+            list-style-type: none;
+            display:grid;
+            grid-template-columns: 1fr;
+            row-gap: 17px;
         }
-        &-text2 {
-            position: absolute;
-            bottom: 36px;
-            line-height: 20px;
-            letter-spacing: 0.3px;
+        &-bottom {
             a {
+                word-break:break-all;
                 color: $cases_item-text;
             }
         }
@@ -76,7 +73,14 @@
         margin-top: 56px; 
         overflow: hidden;        
     }
-       
+
+    .swiper-button-disabled {
+            &:hover {
+                cursor: auto;
+                background-color: $bg-color;
+            }
+        }   
+
     &__button {
         position: absolute;
         width: 81px;
@@ -89,8 +93,8 @@
         &:hover {
             cursor: pointer;
             background-color: $Lightest;
-        }  
-        
+        }
+
         &-prev {
             left: -102px;
             background-image: url(../icons/Arrow_Left_active.svg);   
@@ -98,6 +102,7 @@
                 background-image: url(../icons/Arrow_Left.svg);
             }
         }
+
         &-next {            
             right: -102px;
             background-image: url(../icons/arrow_right_active.svg);
@@ -106,10 +111,4 @@
             }      
         }
     }
-    .swiper-button-disabled {
-        &:hover {
-            cursor: auto;
-            background-color: $bg-color;
-        }
-    }   
 }
