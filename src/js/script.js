@@ -34,17 +34,29 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     speed: 400,
     navigation: {
-      nextEl: ".cases__button-next",
-      prevEl: ".cases__button-prev",
-    },
-    breakpoints: {
+          nextEl: ".cases__button-next",
+          prevEl: ".cases__button-prev",
+        },
+        breakpoints: {
       // when window width is >= 1441px
       1441: {
         spaceBetween: 85
       },
       // when window width is >= 1280px
       1280: {
-        spaceBetween: 32
+        spaceBetween: 32,
+        // navigation: {
+        //   nextEl: ".cases__button-next",
+        //   prevEl: ".cases__button-prev",
+        // },
+      },
+      // when window width is >= 768px
+      768: {
+        // slidesPerView: auto,
+        spaceBetween: 16,
+        // navigation: {
+        //   enabled: false
+        // },
       },
     }
   });

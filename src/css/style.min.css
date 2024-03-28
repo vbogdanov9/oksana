@@ -1409,14 +1409,14 @@ h3 {
   .cases__subheader {
     margin-top: 20px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 21px;
   }
   .cases__swiper-container {
     width: 89.07563025%;
     margin: 0 auto;
   }
   .cases__swiper {
-    margin-top: 40px;
+    margin-top: 34px;
   }
   .cases__item {
     height: 466px;
@@ -1638,6 +1638,39 @@ h3 {
   }
   .service button {
     margin-top: 32px;
+  }
+  .cases {
+    padding: 40px 0 45px 0;
+  }
+  .cases__header {
+    line-height: 29px;
+  }
+  .cases__subheader {
+    font-size: 17px;
+  }
+  .cases__swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .cases__swiper {
+    width: 956px;
+    margin-top: 27px;
+  }
+  .cases__item {
+    width: 308px;
+    height: 399px;
+    padding: 23px 16px 19px 16px;
+    font-size: 14px;
+    line-height: 15.4px;
+  }
+  .cases__item-top {
+    row-gap: 18.5px;
+  }
+  .cases__item-bottom {
+    line-height: 16px;
+  }
+  .cases__button {
+    display: none;
   }
 }
 @media (max-width: 767px) {
