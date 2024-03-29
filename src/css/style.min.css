@@ -1649,7 +1649,7 @@ h3 {
     font-size: 17px;
   }
   .cases__swiper-container {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
   }
   .cases__swiper {
@@ -1857,6 +1857,28 @@ h3 {
   .service__item_active .descr {
     margin-top: 20px;
     padding: 8px 16px;
+  }
+  .cases {
+    padding: 40px 0;
+  }
+  .cases__subheader {
+    margin-top: 12px;
+    padding-right: 40px;
+    font-size: 14px;
+  }
+  .cases__subheader p {
+    margin-top: 5px;
+  }
+  .cases__swiper {
+    width: 854px;
+    margin-top: 25px;
+  }
+  .cases__item {
+    width: 263px;
+    height: 331px;
+    border-radius: 36px;
+    border-width: 16px;
+    padding: 22px 16px 20px 16px;
   }
 }
 .empty {

@@ -45,18 +45,14 @@ const swiper = new Swiper('.swiper', {
       // when window width is >= 1280px
       1280: {
         spaceBetween: 32,
-        // navigation: {
-        //   nextEl: ".cases__button-next",
-        //   prevEl: ".cases__button-prev",
-        // },
       },
       // when window width is >= 768px
       768: {
-        // slidesPerView: auto,
         spaceBetween: 16,
-        // navigation: {
-        //   enabled: false
-        // },
+      },
+      // when window width is >= 0px
+      0: {
+        spaceBetween: 32,
       },
     }
   });
