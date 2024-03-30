@@ -1959,6 +1959,40 @@ h3 {
     border-width: 16px;
     padding: 22px 16px 20px 16px;
   }
+  .cryteria {
+    padding-top: 24px;
+  }
+  .cryteria__content {
+    flex-direction: column;
+  }
+  .cryteria__main {
+    padding: 11px 0 0 16px;
+    row-gap: 21.5px;
+  }
+  .cryteria__item-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .cryteria__item-title:before {
+    top: 50%;
+    left: -16px;
+  }
+  .cryteria__item-descr {
+    margin-top: 0.4em;
+  }
+  .cryteria__aside {
+    margin: 34px 0 0 0;
+    grid-template: 178px 178px/100%;
+  }
+  .cryteria__aside-content {
+    padding-bottom: 2px;
+  }
+  .cryteria__aside-content button {
+    line-height: 18.46px;
+  }
+  .cryteria__aside-test .text {
+    padding: 0 36px 28px 36px;
+  }
 }
 .empty {
   height: 300px;
