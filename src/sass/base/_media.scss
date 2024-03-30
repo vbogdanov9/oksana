@@ -281,7 +281,7 @@
         &__main {
             padding: 26px 16.45% 24px 8.78%;
             align-content: start;
-            row-gap: 7%;
+            row-gap: 27px;
         }
         &__item {           
             &-title {
@@ -302,11 +302,14 @@
             &-content {
                 padding-bottom: 5px;
                 .text {
-                    padding: 0 32px 25px 32px;
+                    padding: 0 36px 25px 36px;
                     font-size: 16px;
                     line-height: 22.72px;
                 }
-            }
+            }            
+        }
+        &__button-call {
+            height: 60px;
         }
     }
     
@@ -478,11 +481,6 @@
     }
     .service {
         padding: 40px 0;
-        &__title {
-            span {
-                color: $active;
-            } 
-        }
         &__picture {
             display: none;
         }
@@ -534,13 +532,13 @@
         &__subheader {
             font-size: 17px;
         }
-        // &__swiper-container {
+        &__swiper-container {
             // width: 100vw;  
             // width: 98vw;
-            // width: 200%;
+            width: 100%;
             // overflow: hidden;    
             // overflow: clip;      
-        // }
+        }
         &__swiper {
             width: 956px;
             margin-top: 27px;            
@@ -560,6 +558,53 @@
         }
         &__button {
             display:none;
+        }
+    }
+    .cryteria {
+        padding: 0 0 40px 0;
+        h2 {
+            line-height: 32px;
+        }
+        &__content {
+            margin-top: 32px;
+        }
+        &__main {
+            padding: 9px 3.985% 0px 3.297%;
+        }
+        &__item {    
+            &-title {
+                font-size: 20px;
+                line-height: 30px;
+                }
+            &-descr {
+                font-size: 14px;
+                line-height: 21px;
+            }        
+        }
+        &__aside {
+            margin-left: 20px;
+            grid-template: 188px 198px / 229px;
+            row-gap: 16px;        
+            &-content {
+                button {
+                    font-size: 14px;          
+                    line-height: 19.88px;
+                }
+                padding-bottom: 2px;
+                .text {
+                    font-size: 14px;
+                    line-height: 19.88px;
+                    padding: 0 20px 18px 20px;
+                }
+            }
+        }
+        &__button-test {   
+            width: 158px;
+            height: 50px; 
+        }
+        &__button-call {
+            width: 168px;
+            letter-spacing: normal;
         }
     }
 }

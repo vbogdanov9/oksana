@@ -3,8 +3,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: $Lightest;
-    &__frame {
-        
+    &__frame {        
         margin-top: 64px;
         padding-top: 57px;
         padding-right: 58px;
@@ -12,8 +11,7 @@
         background-color: $Dark_Grayish;
         border-radius: 36px;
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;        
     }
     &__picture {
         width: 48.342%;

@@ -5,6 +5,9 @@ h2, .quiz__title {
     letter-spacing: 0.2px;
     text-align: left;
     color: $primary;
+    span {
+        color: $active;
+    }
 }
 
 h3 { 

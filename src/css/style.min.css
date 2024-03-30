@@ -132,6 +132,9 @@ h2, .quiz__title {
   text-align: left;
   color: #000036;
 }
+h2 span, .quiz__title span {
+  color: #663E00;
+}
 
 h3 {
   font-family: Raleway;
@@ -572,9 +575,6 @@ h3 {
 .cases__header {
   line-height: 48px;
 }
-.cases__header span {
-  color: #663E00;
-}
 .cases__subheader {
   margin-top: 25px;
   font-family: Raleway;
@@ -722,12 +722,10 @@ h3 {
 .cryteria__aside-test {
   background-color: #373D4F;
   color: #EBEAE6;
-  font-weight: 500;
 }
 .cryteria__aside-call {
   background-color: #D9D9D9;
   color: #282836;
-  font-weight: 600;
 }
 .cryteria__aside-content {
   height: 100%;
@@ -740,9 +738,9 @@ h3 {
 .cryteria__aside-content .text {
   padding: 0 32px 25px 32px;
   font-family: Raleway;
+  font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 0.5px;
   text-align: center;
 }
 .cryteria__button-test {
@@ -1448,7 +1446,7 @@ h3 {
   .cryteria__main {
     padding: 26px 16.45% 24px 8.78%;
     align-content: start;
-    row-gap: 7%;
+    row-gap: 27px;
   }
   .cryteria__item-title {
     font-size: 18px;
@@ -1469,9 +1467,12 @@ h3 {
     padding-bottom: 5px;
   }
   .cryteria__aside-content .text {
-    padding: 0 32px 25px 32px;
+    padding: 0 36px 25px 36px;
     font-size: 16px;
     line-height: 22.72px;
+  }
+  .cryteria__button-call {
+    height: 60px;
   }
 }
 @media (max-width: 1279px) {
@@ -1630,9 +1631,6 @@ h3 {
   .service {
     padding: 40px 0;
   }
-  .service__title span {
-    color: #663E00;
-  }
   .service__picture {
     display: none;
   }
@@ -1685,6 +1683,9 @@ h3 {
   .cases__subheader {
     font-size: 17px;
   }
+  .cases__swiper-container {
+    width: 100%;
+  }
   .cases__swiper {
     width: 956px;
     margin-top: 27px;
@@ -1704,6 +1705,51 @@ h3 {
   }
   .cases__button {
     display: none;
+  }
+  .cryteria {
+    padding: 0 0 40px 0;
+  }
+  .cryteria h2 {
+    line-height: 32px;
+  }
+  .cryteria__content {
+    margin-top: 32px;
+  }
+  .cryteria__main {
+    padding: 9px 3.985% 0px 3.297%;
+  }
+  .cryteria__item-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .cryteria__item-descr {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .cryteria__aside {
+    margin-left: 20px;
+    grid-template: 188px 198px/229px;
+    row-gap: 16px;
+  }
+  .cryteria__aside-content {
+    padding-bottom: 2px;
+  }
+  .cryteria__aside-content button {
+    font-size: 14px;
+    line-height: 19.88px;
+  }
+  .cryteria__aside-content .text {
+    font-size: 14px;
+    line-height: 19.88px;
+    padding: 0 20px 18px 20px;
+  }
+  .cryteria__button-test {
+    width: 158px;
+    height: 50px;
+  }
+  .cryteria__button-call {
+    width: 168px;
+    letter-spacing: normal;
   }
 }
 @media (max-width: 767px) {

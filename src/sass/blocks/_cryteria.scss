@@ -60,12 +60,10 @@
         &-test {
             background-color: $Dark_Grayish;
             color: $bg-color;
-            font-weight: 500;
         }
         &-call {
             background-color: $cases_item-text;
             color: $text;   
-            font-weight: 600;// так больше похоже на макет  
         }
         &-content {
             height: 100%;
@@ -77,9 +75,9 @@
             .text {
                 padding: 0 32px 25px 32px;
                 font-family: Raleway;
+                font-weight: 500;
                 font-size: 20px;
                 line-height: 28px;
-                letter-spacing: 0.5px;
                 text-align: center; 
             }
         }
