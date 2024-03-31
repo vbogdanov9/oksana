@@ -17,7 +17,7 @@ body {
 };
 
 .container {    
-    max-width: 1380px;
+    max-width: 1382px;
     margin: 0 auto;
 };
 
@@ -32,7 +32,8 @@ body {
 @import 'blocks/service';
 @import 'blocks/cases';
 @import 'blocks/cryteria';
-@import 'blocks/testimonials';
+// @import 'blocks/testimonials';
+@import 'blocks/testimonials2';
 @import 'blocks/cta';
 @import 'blocks/footer';
 @import 'blocks/quiz';
