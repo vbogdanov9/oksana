@@ -10,7 +10,6 @@
         max-width: 674px;
     }
     h2 {
-        // line-height: 48px;
         color: $bg-color;
     }
     h3 {
@@ -52,10 +51,7 @@
             }
             &:not(:placeholder-shown) {
                 border: 3px solid $input_border;
-            }
-            &:focus {
-                outline: 5px solid $input_border;
-            }    
+            }            
             &:invalid {
                 outline: 1px solid $error;
                 border: 1px solid $error;
@@ -64,6 +60,9 @@
                 background-repeat:no-repeat;
                 background-position: center right 16px;
             }
+            &:focus {
+                outline: 5px solid $input_border;
+            }   
         }        
     }
     &__radio {
@@ -103,13 +102,10 @@
         margin-top: 64px;
         display: flex;
         align-items: center;
-        // button {
-        //     border: none;
-        //     color: $Dark_Grayish;
-        //     background-color: $Lightest;
-        // }
+        button {
+            flex: none;
+        }
         div {
-            max-width: 434px;
             margin-left: 16px;
             font-family: Raleway;
             font-size: 14px;
@@ -160,24 +156,85 @@
                 height: 54px;
                 border: none;
             }
-            
-
-
-
-            // display: flex;
-            // align-items: center;
             div {
-                max-width: 273px;
-            //     margin-left: 16px;
-            //     font-family: Raleway;
-                font-size: 12px;
-            //     font-weight: 400;
+                margin-left: 8px;
+                font-size: 12px;    
                 line-height: 16.8px;
-            //     letter-spacing: 0px;
-            //     text-align: left;
-            //     color: $Lightest;
             }
         }
+    }
+}
+@media (max-width: 1279px) {
+    .cta {
+        padding: 40px 0;
+        .container {
+            grid-template-columns: 43.40659341% 52.1978022%; 
+        }
+        h3 {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 19.6px;
+        }
+        &__form {
+            row-gap: 16px;
+            label.form {
+                font-size: 17px;
+                line-height: 22.42px;
+            }
+            input.string {
+                width: 100%;
+                height: 42px;
+                padding: 12px 16px;
+                font-size: 14px;
+                line-height: 18.46px;            
+            }  
+        }
+        &__radio {
+            width: 100%;
+            &-item {
+                width: 34.73684211%;  
+            }   
+            label {
+                font-size: 14px;
+                line-height: 18.46px;
+                letter-spacing: 0.5px;    
+            }
+        }
+        &__button {
+            margin-top: 24px;
+            div {
+                font-size: 12px;    
+                line-height: 16.8px;
+            }
+        }
+    }
+}
 
+@media (max-width: 767px) {
+    .cta {
+        .container {
+            grid-template-columns: 1fr; 
+            row-gap: 32px;
+        }       
+        &__radio {
+            &-item {
+                width: 47.1875%;  
+            } 
+        }
+        &__button {
+            flex-direction: column;
+            margin-top: 32px;
+            button {
+                width: 158px;
+                height: 50px;
+            }
+            div {
+                max-width: 75%;
+                margin: 8px 0 0 0;
+                font-size: 10px;
+                line-height: 14px;
+                text-align: center;
+            }
+        }
     }
 }
