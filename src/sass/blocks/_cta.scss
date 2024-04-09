@@ -215,6 +215,7 @@
         .container {
             grid-template-columns: 1fr; 
             row-gap: 32px;
+            // max-width: 340px;
         }       
         &__radio {
             &-item {

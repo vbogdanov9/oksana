@@ -612,8 +612,9 @@
 
 @media (max-width: 767px) {
     .container {
-        // max-width: 88.89%;
-        max-width: 320px;
+        max-width: 80%;
+        // max-width: 94.79166667%;
+        // max-width: 320px;
     }
     button {
         width: 151px;
@@ -673,8 +674,10 @@
             justify-content: center;  
         } 
         &__mainfigure {
+            background-size: 100% auto;
             margin-top: 40px;
-            width: 288px;
+            // width: 288px;
+            width: 100%;
             height: 228px; 
         }
         .mainfigure {
@@ -716,6 +719,7 @@
             }
         }
         &__lawreference {
+            margin: 0 auto;
             text-align: center;                  
         }
     }
@@ -725,7 +729,9 @@
         }
         padding: 20px 0 44px 0;
         &__photo {
-            width: 288px;
+            // width: 288px;
+            width: 90%;
+
             height: 388px;
             margin: 0 auto;
         }
@@ -857,7 +863,8 @@
             }          
         }
         &__aside {
-            margin: 34px 0 0 0;
+            margin: 34px auto 0 auto;
+            // grid-template: 178px 178px / minmax(360px, 100%);  
             grid-template: 178px 178px / 100%;   
             &-content {
                 button {   
@@ -871,5 +878,14 @@
                 }
             }
         }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        // max-width: 80%;
+        // max-width: 94.79166667%;
+        max-width: 320px;
     }
 }

@@ -13,6 +13,8 @@
         width: 454px;
         height: 635px;
         border-radius: 36px;
+        object-fit: cover;
+        max-width: 454px;
     }
     &__info {
         // position: relative;
