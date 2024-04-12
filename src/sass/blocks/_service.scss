@@ -1,106 +1,133 @@
 .service {
-
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: $Lightest;
-    &__frame {        
-        margin-top: 64px;
-        padding-top: 57px;
-        padding-right: 58px;
-        padding-left: 116px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $Lightest;
+  &__frame {
+    margin-top: 64px;
+    padding-top: 57px;
+    padding-right: 58px;
+    padding-left: 116px;
+    background-color: $Dark_Grayish;
+    border-radius: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__picture {
+    width: 48.342%;
+    border-radius: 40px 40px 0 0;
+    background-image: url(../images/service_picture.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  &__items {
+    width: 47.84411277%;
+    padding: 9px 0 32px 0;
+    display: grid;
+    row-gap: 48px;
+  }
+  &__item {
+    // overflow: hidden;
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content;
+    column-gap: 68px;
+    row-gap: 0px;
+    align-content: flex-start;
+    font-family: Raleway;
+    font-weight: 400;
+    text-align: left;
+    .title {
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.2px; // подобрал
+      color: $Lightest;
+    }
+    .plus_frame {
+      margin-right: 23px;
+      width: 34px;
+      height: 34px;
+      border: 2px solid $Dark_Grayish;
+      border-radius: 50%;
+    }
+    &:hover {
+      cursor: pointer;
+      .plus_frame {
+        background-color: $text;
+        border-color: $text;
+      }
+    }
+    .plus {
+      width: 100%;
+      height: 100%;
+      background-image: url(../icons/service-plus.svg);
+      background-size: 100% 100%;
+    }
+    .divider {
+      margin-top: 58px;
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $text;
+      &_last {
         background-color: $Dark_Grayish;
-        border-radius: 36px;
-        display: flex;
-        justify-content: space-between;        
+      }
     }
-    &__picture {
-        width: 48.342%;
-        border-radius: 40px 40px 0 0;
-        background-image: url(../images/service_picture.jpg);       
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+    .descr-frame {
+      grid-column: 1/3;
+      //   display: none;
+      //   transition: all 1s;
+      max-height: 0;
+      overflow: hidden;
+      //   transition: all 1s ease-out;
     }
-    &__items {
-        width: 47.84411277%;
-        padding: 9px 0 32px 0;
-        display: grid;
-        row-gap: 48px;
-    }    
-    &__item {
-            display: grid;
-            grid-template-columns: auto min-content;
-            grid-template-rows: min-content;
-            column-gap: 68px;
-            row-gap: 0px;
-            align-content:flex-start;
-            font-family: Raleway;
-            font-weight: 400;
-            text-align: left;
-        .title {
-            font-size: 32px;
-            line-height: 38px;
-            letter-spacing: 0.2px; // подобрал
-            color: $Lightest;
-        }
-        .plus_frame {
-            margin-right: 23px;
-            width: 34px;
-            height: 34px;
-            border: 2px solid $Dark_Grayish;
-            border-radius: 50%;           
-        }
-        &:hover {
-            cursor: pointer;    
-            .plus_frame {
-                background-color: $text;                               
-                border-color: $text;          
-            } 
-        } 
-        .plus {
-            width: 100%;
-            height: 100%;
-            background-image: url(../icons/service-plus.svg);
-            background-size: 100% 100%;            
-        }
-        .divider {
-            margin-top: 58px;
-            width: 100%;
-            height: 2px;
-            border-radius: 1px;
-            background-color: $text;
-            &_last {               
-                background-color: $Dark_Grayish;             
-            }
-        }
-        .descr {
-            display: none;      
-        }
-        .gap_2 {
-            display: none;
-        }
-        
+    .descr {
+      //   display: none;
+      //   opacity: 0;
+      //   height: 0;
+      transition: all 1s;
+      transform: translateY(-150%);
+
+      background-color: $text;
+      color: $review_descr;
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 39px;
+      //   grid-column: 1/3;
+      padding: 13px 26px;
     }
-    &__item_active {
-        margin-top: 26px;
-        .descr {
-            display: block; 
-            margin-top: 39px;    
-            grid-column: 1/3; 
-            padding: 13px 26px;
-            background-color: $text;
-            color: $review_descr;   
-            font-size: 18px;
-            line-height: 28px;      
-        }
-        .divider {
-            margin-top: 24px;
-        }
-        .plus {
-            transform: rotate(45deg);        
-        }        
+  }
+  &__item_active {
+    // margin-top: 26px;
+    .descr-frame {
+      //   display: block;
+      //   grid-column: 1/3;
+      max-height: unset;
+      //   transition: all 1s;
+      //   overflow: visible;
+      //   transition: max-height 1s ease-out;
     }
-    button {
-        margin: 40px auto 0 auto;
+    .descr {
+      //   max-height: unset;
+      //   height: auto;
+      //   transition: all 1s;
+
+      transform: translateY(0);
+      //   transition: all 1s;
+      //   height: auto;
+      //   transition: all 1s;
+      //   display: block;
+      //   transform: translateY(0);
+      //   opacity: 1;
     }
+    .divider {
+      margin-top: 24px;
+    }
+    .plus {
+      transform: rotate(45deg);
+    }
+  }
+  button {
+    margin: 40px auto 0 auto;
+  }
 }
