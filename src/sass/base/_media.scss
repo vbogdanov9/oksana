@@ -1096,18 +1096,20 @@
   }
 }
 
-@media (max-width: 360px) {
-  .hero {
-    &__mainfigure {
-      background-size: auto 100%;
-    }
-  }
-}
+
 
 @media (max-width: 400px) {
   .container {
     // max-width: 80%;
     // max-width: 94.79166667%;
     max-width: 320px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    &__mainfigure {
+      background-size: auto 100%;
+    }
   }
 }
