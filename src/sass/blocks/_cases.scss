@@ -1,10 +1,12 @@
 .cases {
+    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 108px;
 
     &__header {
         line-height: 48px;
     }
+
     &__subheader {
         margin-top: 25px; // подобрал
         font-family: Raleway;
@@ -14,20 +16,20 @@
         letter-spacing: 0.25px; //подобрал
         text-align: left;
         color: $cases_subheader;
-    }    
+    }
 
     &__item {
         height: 518px;
         width: 404px;
-        border-radius: 42px;   
+        border-radius: 42px;
         border: 24px solid $grey_bg;
-        
 
-        padding: 36px 32px 36px 32px;      
-        background-image: url(../images/cases_item-bg.jpg);        
+
+        padding: 36px 32px 36px 32px;
+        background-image: url(../images/cases_item-bg.jpg);
         background-size: 100% auto;
         background-position: center center;
-        background-repeat: no-repeat;        
+        background-repeat: no-repeat;
         background-color: $grey_bg;
         background-blend-mode: multiply;
 
@@ -41,22 +43,23 @@
         line-height: 19.8px;
         font-weight: 500;
         text-align: left;
-        color: $cases_item-text;   
-        
+        color: $cases_item-text;
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        align-content: space-between; 
+        align-content: space-between;
 
         &-top {
             list-style-type: none;
-            display:grid;
+            display: grid;
             grid-template-columns: 1fr;
             row-gap: 17px;
         }
+
         &-bottom {
             a {
-                word-break:break-all;
+                word-break: break-all;
                 color: $cases_item-text;
             }
         }
@@ -67,26 +70,27 @@
     }
 
     &__swiper {
-        margin-top: 56px; 
-        overflow: hidden;        
+        margin-top: 56px;
+        overflow: hidden;
     }
 
     .swiper-button-disabled {
-            &:hover {
-                cursor: auto;
-                background-color: $bg-color;
-            }
-        }   
+        &:hover {
+            cursor: auto;
+            background-color: $bg-color;
+        }
+    }
 
     &__button {
         position: absolute;
         width: 81px;
         height: 138px;
         border-radius: 80px;
-        top:48%; // подобрал
+        top: 48%; // подобрал
         transform: translateY(-50%);
         background-position: center;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;
+
         &:hover {
             cursor: pointer;
             background-color: $Lightest;
@@ -94,18 +98,20 @@
 
         &-prev {
             left: -102px;
-            background-image: url(../icons/Arrow_Left_active.svg);   
+            background-image: url(../icons/Arrow_Left_active.svg);
+
             &.swiper-button-disabled {
                 background-image: url(../icons/Arrow_Left.svg);
             }
         }
 
-        &-next {            
+        &-next {
             right: -102px;
             background-image: url(../icons/arrow_right_active.svg);
+
             &.swiper-button-disabled {
                 background-image: url(../icons/arrow_right.svg);
-            }      
+            }
         }
     }
 }
