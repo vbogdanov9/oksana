@@ -59,18 +59,29 @@ const swiper = new Swiper('.swiper', {
 
 
 window.addEventListener('DOMContentLoaded', () => {
-var service_item = document.getElementsByClassName("service__item");
-// var plus = document.getElementsByClassName("plus_frame");
-var i;
 
-for (i = 0; i < service_item.length; i++) {
-  service_item[i].addEventListener("click", function() {
-    this.classList.toggle("service__item_active");  
-  });
-}
+const serviceItems = [ ...document.getElementsByClassName("service__item")];
+  serviceItems.forEach(serviceItem => {
+    const plus = serviceItem.querySelector(".plus");
+    plus.addEventListener("click", (e,) => {
+      e.preventDefault();
+      serviceItem.classList.toggle("service__item_active");
+    })
+  })
+
+
+// var plus = document.getElementsByClassName("plus_frame");
+
+// var i;
+
+// for (i = 0; i < service_item.length; i++) {
+//   service_item[i].addEventListener("click", function() {
+//     this.classList.toggle("service__item_active");  
+//   });
+// }
 
   const textReviews = document.querySelectorAll('.review-text');
-  // console.log("textReviews =", textReviews)
+  console.log("textReviews =", [...textReviews])
   textReviews.forEach (review => {
     const link = review.querySelector("a");
     // console.log("link =", link);

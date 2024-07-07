@@ -519,10 +519,8 @@ h3 {
   border: 2px solid #373D4F;
   border-radius: 50%;
 }
-.service__item:hover {
+.service__item .plus_frame:hover {
   cursor: pointer;
-}
-.service__item:hover .plus_frame {
   background-color: #282836;
   border-color: #282836;
 }
@@ -548,8 +546,6 @@ h3 {
   overflow: hidden;
 }
 .service__item .descr {
-  transition: all 1s;
-  transform: translateY(-150%);
   background-color: #282836;
   color: #CDD3E5;
   font-size: 18px;
@@ -559,9 +555,6 @@ h3 {
 }
 .service__item_active .descr-frame {
   max-height: unset;
-}
-.service__item_active .descr {
-  transform: translateY(0);
 }
 .service__item_active .divider {
   margin-top: 24px;
