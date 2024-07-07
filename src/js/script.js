@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
@@ -60,34 +61,39 @@ const swiper = new Swiper('.swiper', {
 
 window.addEventListener('DOMContentLoaded', () => {
 
+
+// скрываем и показываем элементы блока  service
+// const OPENSPEED задаем скорость открытия содержимого элементов в блоке services, как быстро открывает, количество пикселей за секунду
+const PX_PER_SEC = 200;
+
 const serviceItems = [ ...document.getElementsByClassName("service__item")];
-  serviceItems.forEach(serviceItem => {
-    const plus = serviceItem.querySelector(".plus");
+
+serviceItems.forEach(serviceItem => {
+    const plus = serviceItem.querySelector(".plus");   
     plus.addEventListener("click", (e,) => {
       e.preventDefault();
+      const frame = serviceItem.querySelector(".descr-frame");
+
+      // рассчитываем длительность открывания-закрывания на основании содержимого, чтобы скорость открытия была одинаковая  с разным объемом текста
+      frame.style.transitionDuration = `${parseInt(1000 * frame.scrollHeight / PX_PER_SEC)}ms`;
+
+      //скрываем или показываем содержимое - текст элементов в блоке  service
+      if (frame.clientHeight == 0) {
+        frame.style.maxHeight = frame.scrollHeight +'px'
+      } else {
+        frame.style.maxHeight = 0;
+      }
+
+     // классом здесь меняем по сути только крестик      
       serviceItem.classList.toggle("service__item_active");
     })
   })
 
-
-// var plus = document.getElementsByClassName("plus_frame");
-
-// var i;
-
-// for (i = 0; i < service_item.length; i++) {
-//   service_item[i].addEventListener("click", function() {
-//     this.classList.toggle("service__item_active");  
-//   });
-// }
-
+  //скрываем и показываем содержимое текстовых отзывов
   const textReviews = document.querySelectorAll('.review-text');
-  console.log("textReviews =", [...textReviews])
   textReviews.forEach (review => {
     const link = review.querySelector("a");
-    // console.log("link =", link);
     link.addEventListener("click", (e,) => {
-      // console.log("e =", e);
-      // console.log("review =", review);
       e.preventDefault();
       review.classList.toggle("review-text_active");  
     })
