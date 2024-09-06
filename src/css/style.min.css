@@ -2272,6 +2272,9 @@ h3 {
     padding-top: 44px;
     padding-bottom: 44px;
   }
+  .hero .container {
+    max-width: 525px;
+  }
   .hero__wrapper {
     grid-template-columns: 1fr;
     padding: 20px 0 32px 0;

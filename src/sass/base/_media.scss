@@ -815,6 +815,9 @@
   .hero {
     padding-top: 44px;
     padding-bottom: 44px;
+    .container {
+      max-width: 525px;
+    }
 
     &__wrapper {
       grid-template-columns: 1fr;

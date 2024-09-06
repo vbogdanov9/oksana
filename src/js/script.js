@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // скрываем и показываем элементы блока  service
-// const OPENSPEED задаем скорость открытия содержимого элементов в блоке services, как быстро открывает, количество пикселей за секунду
+// с помощью PX_PER_SEC задаем скорость открытия содержимого элементов в блоке services, как быстро открывает, количество пикселей за секунду
 const PX_PER_SEC = 200;
 
 const serviceItems = [ ...document.getElementsByClassName("service__item")];
