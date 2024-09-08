@@ -213,7 +213,10 @@
   }
 
   .stories {
-    padding: 40px 0;
+    padding: 12px 0;
+    .container {
+      height: 176px; //  увеличил чтоб тень влазила
+    }
 
     &__frame {
       width: 104px;
@@ -581,7 +584,7 @@
   }
 
   .stories {
-    overflow: hidden;
+    // overflow: hidden;
 
     .container {
       justify-content: start;
@@ -964,10 +967,13 @@
   }
 
   .stories {
-    padding: 20px 0;
+    padding: 0;
 
     .container {
-      padding-left: 4px;
+      padding-left: 16px;
+
+        height: 120px; //  увеличил чтоб тень влазила
+
     }
 
     &__frame {

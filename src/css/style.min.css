@@ -434,13 +434,18 @@ h3 {
 }
 
 .stories {
-  padding: 48px 0;
+  padding: 20px 0;
   background-color: #373D4F;
 }
 .stories .container {
+  height: 234px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  overflow-x: scroll;
+}
+.stories .container::-webkit-scrollbar {
+  display: none;
 }
 .stories__frame {
   display: flex;
@@ -1816,7 +1821,10 @@ h3 {
     height: 14.06px;
   }
   .stories {
-    padding: 40px 0;
+    padding: 12px 0;
+  }
+  .stories .container {
+    height: 176px;
   }
   .stories__frame {
     width: 104px;
@@ -2092,9 +2100,6 @@ h3 {
   .about .swiper-pagination-bullet .dot {
     width: 13.03px;
     height: 13.03px;
-  }
-  .stories {
-    overflow: hidden;
   }
   .stories .container {
     justify-content: start;
@@ -2381,10 +2386,11 @@ h3 {
     height: 10.7px;
   }
   .stories {
-    padding: 20px 0;
+    padding: 0;
   }
   .stories .container {
-    padding-left: 4px;
+    padding-left: 16px;
+    height: 120px;
   }
   .stories__frame {
     width: 60px;
