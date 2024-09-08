@@ -282,13 +282,14 @@
       }
     }
 
-    &__item_active {
-      // margin-top: 16px;
+    //  такое есть в макете но выглядит некрасиво
+    // &__item_active {
+    //   margin-top: 16px;
 
-      .divider {
-        margin-top: 15px;
-      }
-    }
+    //   .divider {
+    //     margin-top: 15px;
+    //   }
+    // }
   }
 
   .cases {
@@ -629,23 +630,27 @@
         grid-column: 1/3;
         margin-top: 29px;
       }
-    }
 
-    &__item_active {
-      margin-top: 0;
+      .descr-frame {
+        grid-column: 1;
+      }
 
       .descr {
         margin-top: 14px;
-        padding: 8px 162px 8px 16px;
+        padding: 8px 62px 8px 16px;
         font-size: 14px;
         line-height: 21px;
         border-radius: 8px;
       }
 
-      .divider {
-        display: none;
+      &_active {
+        .divider {
+          display: none;
+        }
       }
     }
+
+
 
     button {
       margin-top: 32px;
@@ -1017,15 +1022,15 @@
       .divider {
         margin-top: 19px;
       }
-    }
 
-    &__item_active {
       .descr {
         margin-top: 20px;
         padding: 8px 16px;
       }
     }
-  }
+    }
+
+
 
   .cases {
     padding: 40px 0;

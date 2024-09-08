@@ -4,11 +4,11 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     grabCursor: true,
     speed: '1000',
-  
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      // clickable: true,      
+      // clickable: true,
       renderBullet: function (index, className) {
       return '<div class="' + className + '"><div class="dot"></div></div>';
       },
@@ -69,22 +69,36 @@ const PX_PER_SEC = 200;
 const serviceItems = [ ...document.getElementsByClassName("service__item")];
 
 serviceItems.forEach(serviceItem => {
-    const plus = serviceItem.querySelector(".plus");   
-    plus.addEventListener("click", (e,) => {
+
+      serviceItem.addEventListener("click", (e,) => {
       e.preventDefault();
       const frame = serviceItem.querySelector(".descr-frame");
 
       // рассчитываем длительность открывания-закрывания на основании содержимого, чтобы скорость открытия была одинаковая  с разным объемом текста
       frame.style.transitionDuration = `${parseInt(1000 * frame.scrollHeight / PX_PER_SEC)}ms`;
 
-      //скрываем или показываем содержимое - текст элементов в блоке  service
+
       if (frame.clientHeight == 0) {
-        frame.style.maxHeight = frame.scrollHeight +'px'
+
+
+        // проверка и закрытие других открытых
+        serviceItems.forEach(serviceItemToClose => {
+          if (serviceItemToClose != serviceItem) {
+            const frameToClose = serviceItemToClose.querySelector(".descr-frame");
+            if (frameToClose.clientHeight != 0) frameToClose.style.maxHeight = 0;
+          }
+        })
+
+        //показываем содержимое - текст элементов в блоке  service
+        frame.style.maxHeight = frame.scrollHeight +'px';
+
+
+// скрываем содержимое если блок активен
       } else {
         frame.style.maxHeight = 0;
       }
 
-     // классом здесь меняем по сути только крестик      
+     // классом здесь меняем по сути только крестик
       serviceItem.classList.toggle("service__item_active");
     })
   })
@@ -95,13 +109,13 @@ serviceItems.forEach(serviceItem => {
     const link = review.querySelector("a");
     link.addEventListener("click", (e,) => {
       e.preventDefault();
-      review.classList.toggle("review-text_active");  
+      review.classList.toggle("review-text_active");
     })
   })
 
 
 
-  
+
 
 })
 
