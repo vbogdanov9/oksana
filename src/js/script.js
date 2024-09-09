@@ -85,7 +85,10 @@ serviceItems.forEach(serviceItem => {
         serviceItems.forEach(serviceItemToClose => {
           if (serviceItemToClose != serviceItem) {
             const frameToClose = serviceItemToClose.querySelector(".descr-frame");
-            if (frameToClose.clientHeight != 0) frameToClose.style.maxHeight = 0;
+            if (frameToClose.clientHeight != 0) {
+              serviceItemToClose.classList.remove("service__item_active");
+              frameToClose.style.maxHeight = 0;
+            }
           }
         })
 
