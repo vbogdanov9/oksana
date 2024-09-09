@@ -109,7 +109,12 @@ serviceItems.forEach(serviceItem => {
     const link = review.querySelector("a");
     link.addEventListener("click", (e,) => {
       e.preventDefault();
+
+      if (link.text == 'Читать весь отзыв') link.text = 'Скрыть'
+      else if (link.text == 'Скрыть') link.text = 'Читать весь отзыв'
+
       review.classList.toggle("review-text_active");
+
     })
   })
 
