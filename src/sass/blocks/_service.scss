@@ -40,6 +40,13 @@
     font-family: Raleway;
     font-weight: 400;
     text-align: left;
+    &:hover {
+      cursor: pointer;
+      .plus_frame {
+          background-color: $text;
+          border-color: $text;
+      }
+    }
 
     .title {
       font-size: 32px;
@@ -55,11 +62,11 @@
       border: 2px solid $Dark_Grayish;
       border-radius: 50%;
 
-      &:hover {
-        cursor: pointer;
-        background-color: $text;
-        border-color: $text;
-      }
+      // &:hover {
+      //   cursor: pointer;
+      //   background-color: $text;
+      //   border-color: $text;
+      // }
     }
 
     .plus {

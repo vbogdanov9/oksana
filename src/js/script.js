@@ -120,11 +120,6 @@ serviceItems.forEach(serviceItem => {
 
     })
   })
-
-
-
-
-
 })
 
 

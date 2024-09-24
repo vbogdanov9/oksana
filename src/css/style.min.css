@@ -511,6 +511,13 @@ h3 {
   font-weight: 400;
   text-align: left;
 }
+.service__item:hover {
+  cursor: pointer;
+}
+.service__item:hover .plus_frame {
+  background-color: #282836;
+  border-color: #282836;
+}
 .service__item .title {
   font-size: 32px;
   line-height: 38px;
@@ -523,11 +530,6 @@ h3 {
   height: 34px;
   border: 2px solid #373D4F;
   border-radius: 50%;
-}
-.service__item .plus_frame:hover {
-  cursor: pointer;
-  background-color: #282836;
-  border-color: #282836;
 }
 .service__item .plus {
   width: 100%;
